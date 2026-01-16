@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\SHS_Job_Integrate.props" />
+</Project>

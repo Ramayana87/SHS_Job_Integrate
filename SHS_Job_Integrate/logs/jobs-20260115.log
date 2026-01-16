@@ -1,0 +1,124 @@
+2026-01-15 15:34:40.528 [INF] ========== Excel Import Job Started ==========
+2026-01-15 15:34:40.535 [INF] Mode: SMB
+2026-01-15 15:34:57.006 [INF] No files found matching pattern *.xlsx
+2026-01-15 15:34:57.007 [INF] ========== Job Completed in 16.48s ==========
+2026-01-15 15:50:13.236 [INF] ========== Excel Import Job Started ==========
+2026-01-15 15:50:13.243 [INF] Mode: SMB
+2026-01-15 15:50:29.841 [INF] No files found matching pattern *.xlsx;*.xls;*.csv
+2026-01-15 15:50:29.842 [INF] ========== Job Completed in 16.61s ==========
+2026-01-15 15:51:09.317 [INF] ========== Excel Import Job Started ==========
+2026-01-15 15:51:09.318 [INF] Mode: SMB
+2026-01-15 15:52:36.796 [INF] No files found matching pattern *.xlsx;*.xls;*.csv
+2026-01-15 15:52:36.799 [INF] ========== Job Completed in 87.48s ==========
+2026-01-15 15:53:42.674 [INF] ========== Excel Import Job Started ==========
+2026-01-15 15:53:42.675 [INF] Mode: SMB
+2026-01-15 15:54:04.954 [INF] No files found matching pattern *.xlsx;*.xls;*.csv
+2026-01-15 15:54:04.956 [INF] ========== Job Completed in 22.28s ==========
+2026-01-15 15:56:05.769 [INF] ========== Excel Import Job Started ==========
+2026-01-15 15:56:05.770 [INF] Mode: SMB
+2026-01-15 15:56:11.653 [INF] Found 1 file(s) to process
+2026-01-15 15:56:22.499 [INF] Processing: Copy of NGAY 25.12.2025 NIR.xls
+2026-01-15 15:56:25.811 [INF] Read 43 rows, 19 columns
+2026-01-15 15:57:20.735 [ERR] ✗ Error processing Copy of NGAY 25.12.2025 NIR.xls
+System.TypeInitializationException: The type initializer for 'Sap.Data.Hana.HanaConnection' threw an exception.
+ ---> System.IO.FileNotFoundException: Cannot find a matching libadonetHDB.dll with version 2.21.28 - check the location in the HDBDOTNETCORE or PATH / LD_LIBRARY_PATH / DYLD_LIBRARY_PATH environment variables
+
+Searched paths and results: 
+
+   at Sap.Data.Hana.HanaUnmanagedDll.SearchNativeDlls()
+   at Sap.Data.Hana.HanaUnmanagedDll..ctor()
+   at Sap.Data.Hana.HanaUnmanagedDll.get_Instance()
+   at Sap.Data.Hana.HanaConnection..cctor()
+   --- End of inner exception stack trace ---
+   at Sap.Data.Hana.HanaConnection..ctor(String connectionString)
+   at SHS_Job_Integrate.Services.Database.HanaDbService.GetConnectionAsync(CancellationToken ct)
+   at SHS_Job_Integrate.Services.Database.HanaDbService.DropTempTableAsync(String tempTableName, CancellationToken ct)
+   at SHS_Job_Integrate.Services.Database.HanaDbService.ProcessWithTempTableAsync(String tempTableName, DataTable data, String procedureName, CancellationToken ct)
+   at SHS_Job_Integrate.Jobs.ExcelImportJob.ExecuteAsync(CancellationToken ct)
+2026-01-15 15:57:20.778 [INF] ========== Job Completed in 75.01s ==========
+2026-01-15 15:59:21.194 [INF] ========== Excel Import Job Started ==========
+2026-01-15 15:59:21.194 [INF] Mode: SMB
+2026-01-15 15:59:25.262 [INF] Found 1 file(s) to process
+2026-01-15 15:59:25.263 [INF] Processing: Copy of NGAY 25.12.2025 NIR.xls
+2026-01-15 15:59:25.437 [INF] Read 43 rows, 19 columns
+2026-01-15 15:59:25.650 [ERR] ✗ Error processing Copy of NGAY 25.12.2025 NIR.xls
+System.TypeInitializationException: The type initializer for 'Sap.Data.Hana.HanaConnection' threw an exception.
+ ---> System.IO.FileNotFoundException: Cannot find a matching libadonetHDB.dll with version 2.21.28 - check the location in the HDBDOTNETCORE or PATH / LD_LIBRARY_PATH / DYLD_LIBRARY_PATH environment variables
+
+Searched paths and results: 
+
+   at Sap.Data.Hana.HanaUnmanagedDll.SearchNativeDlls()
+   at Sap.Data.Hana.HanaUnmanagedDll..ctor()
+   at Sap.Data.Hana.HanaUnmanagedDll.get_Instance()
+   at Sap.Data.Hana.HanaConnection..cctor()
+   --- End of inner exception stack trace ---
+   at Sap.Data.Hana.HanaConnection..ctor(String connectionString)
+   at SHS_Job_Integrate.Services.Database.HanaDbService.GetConnectionAsync(CancellationToken ct)
+   at SHS_Job_Integrate.Services.Database.HanaDbService.DropTempTableAsync(String tempTableName, CancellationToken ct)
+   at SHS_Job_Integrate.Services.Database.HanaDbService.ProcessWithTempTableAsync(String tempTableName, DataTable data, String procedureName, CancellationToken ct)
+   at SHS_Job_Integrate.Jobs.ExcelImportJob.ExecuteAsync(CancellationToken ct)
+2026-01-15 15:59:25.657 [INF] ========== Job Completed in 4.46s ==========
+2026-01-15 16:05:16.512 [INF] ========== Excel Import Job Started ==========
+2026-01-15 16:05:16.519 [INF] Mode: SMB
+2026-01-15 16:05:16.769 [INF] Found 1 file(s) to process
+2026-01-15 16:05:16.770 [INF] Processing: Copy of NGAY 25.12.2025 NIR.xls
+2026-01-15 16:05:17.022 [INF] Read 43 rows, 19 columns
+2026-01-15 16:06:03.545 [ERR] ✗ Error processing Copy of NGAY 25.12.2025 NIR.xls
+Sap.Data.Hana.HanaException (0x80004005): Connection failed (RTE:[89006] System call 'connect' failed, rc=10061:No connection could be made because the target machine actively refused it {172.16.8.40:30015} (172.16.8.40:30015))
+   at Sap.Data.Hana.HanaConnection.Open()
+   at System.Data.Common.DbConnection.OpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at SHS_Job_Integrate.Services.Database.HanaDbService.GetConnectionAsync(CancellationToken ct) in F:\SHS-Convert-HANA\SHS_Job_Integrate\SHS_Job_Integrate\Services\Database\HanaDbService.cs:line 25
+   at SHS_Job_Integrate.Services.Database.HanaDbService.CreateTempTableAsync(String tempTableName, DataTable schema, CancellationToken ct) in F:\SHS-Convert-HANA\SHS_Job_Integrate\SHS_Job_Integrate\Services\Database\HanaDbService.cs:line 71
+   at SHS_Job_Integrate.Services.Database.HanaDbService.ProcessWithTempTableAsync(String tempTableName, DataTable data, String procedureName, CancellationToken ct) in F:\SHS-Convert-HANA\SHS_Job_Integrate\SHS_Job_Integrate\Services\Database\HanaDbService.cs:line 42
+   at SHS_Job_Integrate.Services.Database.HanaDbService.ProcessWithTempTableAsync(String tempTableName, DataTable data, String procedureName, CancellationToken ct) in F:\SHS-Convert-HANA\SHS_Job_Integrate\SHS_Job_Integrate\Services\Database\HanaDbService.cs:line 63
+   at SHS_Job_Integrate.Jobs.ExcelImportJob.ExecuteAsync(CancellationToken ct) in F:\SHS-Convert-HANA\SHS_Job_Integrate\SHS_Job_Integrate\Jobs\ExcelImportJob.cs:line 99
+2026-01-15 16:06:03.576 [INF] ========== Job Completed in 47.06s ==========
+2026-01-15 16:07:30.418 [INF] ========== Excel Import Job Started ==========
+2026-01-15 16:07:30.425 [INF] Mode: SMB
+2026-01-15 16:07:30.667 [INF] Found 1 file(s) to process
+2026-01-15 16:07:30.668 [INF] Processing: Copy of NGAY 25.12.2025 NIR.xls
+2026-01-15 16:07:30.889 [INF] Read 43 rows, 19 columns
+2026-01-15 16:07:50.200 [ERR] ✗ Error processing Copy of NGAY 25.12.2025 NIR.xls
+Sap.Data.Hana.HanaException (0x80004005): authentication failed
+   at Sap.Data.Hana.HanaConnection.Open()
+   at System.Data.Common.DbConnection.OpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at SHS_Job_Integrate.Services.Database.HanaDbService.GetConnectionAsync(CancellationToken ct) in F:\SHS-Convert-HANA\SHS_Job_Integrate\SHS_Job_Integrate\Services\Database\HanaDbService.cs:line 25
+   at SHS_Job_Integrate.Services.Database.HanaDbService.CreateTempTableAsync(String tempTableName, DataTable schema, CancellationToken ct) in F:\SHS-Convert-HANA\SHS_Job_Integrate\SHS_Job_Integrate\Services\Database\HanaDbService.cs:line 71
+   at SHS_Job_Integrate.Services.Database.HanaDbService.ProcessWithTempTableAsync(String tempTableName, DataTable data, String procedureName, CancellationToken ct) in F:\SHS-Convert-HANA\SHS_Job_Integrate\SHS_Job_Integrate\Services\Database\HanaDbService.cs:line 42
+   at SHS_Job_Integrate.Services.Database.HanaDbService.ProcessWithTempTableAsync(String tempTableName, DataTable data, String procedureName, CancellationToken ct) in F:\SHS-Convert-HANA\SHS_Job_Integrate\SHS_Job_Integrate\Services\Database\HanaDbService.cs:line 63
+   at SHS_Job_Integrate.Jobs.ExcelImportJob.ExecuteAsync(CancellationToken ct) in F:\SHS-Convert-HANA\SHS_Job_Integrate\SHS_Job_Integrate\Jobs\ExcelImportJob.cs:line 99
+2026-01-15 16:07:50.232 [INF] ========== Job Completed in 19.81s ==========
+2026-01-15 16:08:12.209 [INF] ========== Excel Import Job Started ==========
+2026-01-15 16:08:12.210 [INF] Mode: SMB
+2026-01-15 16:08:12.368 [INF] Found 1 file(s) to process
+2026-01-15 16:08:12.370 [INF] Processing: Copy of NGAY 25.12.2025 NIR.xls
+2026-01-15 16:08:12.474 [INF] Read 43 rows, 19 columns
+2026-01-15 16:09:36.341 [ERR] ✗ Error processing Copy of NGAY 25.12.2025 NIR.xls
+Sap.Data.Hana.HanaException (0x80004005): invalid name of function or procedure: no procedure with name SP_PROCESS_EXCEL_IMPORT found: line 1 col 6 (at pos 5)
+   at Sap.Data.Hana.HanaCommand._ExecuteNonQuery()
+   at Sap.Data.Hana.HanaCommand.ExecuteNonQuery()
+   at System.Data.Common.DbCommand.ExecuteNonQueryAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at SHS_Job_Integrate.Services.Database.HanaDbService.ExecuteProcedureAsync(String procedureName, Dictionary`2 parameters, CancellationToken ct) in F:\SHS-Convert-HANA\SHS_Job_Integrate\SHS_Job_Integrate\Services\Database\HanaDbService.cs:line 171
+   at SHS_Job_Integrate.Services.Database.HanaDbService.ProcessWithTempTableAsync(String tempTableName, DataTable data, String procedureName, CancellationToken ct) in F:\SHS-Convert-HANA\SHS_Job_Integrate\SHS_Job_Integrate\Services\Database\HanaDbService.cs:line 50
+   at SHS_Job_Integrate.Services.Database.HanaDbService.ProcessWithTempTableAsync(String tempTableName, DataTable data, String procedureName, CancellationToken ct) in F:\SHS-Convert-HANA\SHS_Job_Integrate\SHS_Job_Integrate\Services\Database\HanaDbService.cs:line 63
+   at SHS_Job_Integrate.Jobs.ExcelImportJob.ExecuteAsync(CancellationToken ct) in F:\SHS-Convert-HANA\SHS_Job_Integrate\SHS_Job_Integrate\Jobs\ExcelImportJob.cs:line 99
+2026-01-15 16:09:36.347 [INF] ========== Job Completed in 84.14s ==========
+2026-01-15 16:14:23.335 [INF] ========== Excel Import Job Started ==========
+2026-01-15 16:14:23.335 [INF] Mode: SMB
+2026-01-15 16:14:23.547 [INF] Found 1 file(s) to process
+2026-01-15 16:14:23.548 [INF] Processing: Copy of NGAY 25.12.2025 NIR.xls
+2026-01-15 16:14:23.669 [INF] Read 43 rows, 19 columns
+2026-01-15 16:14:28.151 [ERR] ✗ Error processing Copy of NGAY 25.12.2025 NIR.xls
+Sap.Data.Hana.HanaException (0x80004005): invalid name of function or procedure: no procedure with name SP_PROCESS_EXCEL_IMPORT found: line 1 col 6 (at pos 5)
+   at Sap.Data.Hana.HanaCommand._ExecuteNonQuery()
+   at Sap.Data.Hana.HanaCommand.ExecuteNonQuery()
+   at System.Data.Common.DbCommand.ExecuteNonQueryAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at SHS_Job_Integrate.Services.Database.HanaDbService.ExecuteProcedureAsync(String procedureName, Dictionary`2 parameters, CancellationToken ct) in F:\SHS-Convert-HANA\SHS_Job_Integrate\SHS_Job_Integrate\Services\Database\HanaDbService.cs:line 171
+   at SHS_Job_Integrate.Services.Database.HanaDbService.ProcessWithTempTableAsync(String tempTableName, DataTable data, String procedureName, CancellationToken ct) in F:\SHS-Convert-HANA\SHS_Job_Integrate\SHS_Job_Integrate\Services\Database\HanaDbService.cs:line 50
+   at SHS_Job_Integrate.Services.Database.HanaDbService.ProcessWithTempTableAsync(String tempTableName, DataTable data, String procedureName, CancellationToken ct) in F:\SHS-Convert-HANA\SHS_Job_Integrate\SHS_Job_Integrate\Services\Database\HanaDbService.cs:line 63
+   at SHS_Job_Integrate.Jobs.ExcelImportJob.ExecuteAsync(CancellationToken ct) in F:\SHS-Convert-HANA\SHS_Job_Integrate\SHS_Job_Integrate\Jobs\ExcelImportJob.cs:line 99
+2026-01-15 16:14:28.157 [INF] ========== Job Completed in 4.82s ==========
