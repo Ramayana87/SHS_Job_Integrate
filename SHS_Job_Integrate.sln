@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.36105.23 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SHS_Job_Integrate", "SHS_Job_Integrate\SHS_Job_Integrate.csproj", "{91491C23-7070-4730-848E-5FC0055FF812}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{91491C23-7070-4730-848E-5FC0055FF812}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91491C23-7070-4730-848E-5FC0055FF812}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91491C23-7070-4730-848E-5FC0055FF812}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91491C23-7070-4730-848E-5FC0055FF812}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D3EFB854-DA8F-405F-A374-933FCA479901}
+	EndGlobalSection
+EndGlobal

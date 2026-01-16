@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "l7ULhRBJiMte7TLA8vHxqegPxm69m342zAgnAvPJ8vA=",
+  "Source": "SHS_Job_Integrate",
+  "BasePath": "_content/SHS_Job_Integrate",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

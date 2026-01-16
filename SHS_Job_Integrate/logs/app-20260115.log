@@ -1,0 +1,791 @@
+2026-01-15 15:33:51.268 +07:00 [INF] SHS_Job_Integrate started.  Dashboard at /hangfire
+2026-01-15 15:33:51.497 +07:00 [INF] Now listening on: http://localhost:5152
+2026-01-15 15:33:51.647 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-01-15 15:33:51.648 +07:00 [INF] Hosting environment: Development
+2026-01-15 15:33:51.649 +07:00 [INF] Content root path: F:\SHS-Convert-HANA\SHS_Job_Integrate\SHS_Job_Integrate
+2026-01-15 15:33:51.666 +07:00 [INF] Server desktop-mca5920:30468:defe70c8 successfully announced in 17.7657 ms
+2026-01-15 15:33:51.673 +07:00 [INF] Server desktop-mca5920:30468:defe70c8 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, SqlServerHeartbeatProcess, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-01-15 15:33:51.925 +07:00 [INF] Server desktop-mca5920:30468:defe70c8 all the dispatchers started
+2026-01-15 15:33:52.156 +07:00 [INF] HTTP GET / responded 200 in 48.0334 ms
+2026-01-15 15:33:55.056 +07:00 [INF] HTTP GET /hangfire responded 200 in 255.4369 ms
+2026-01-15 15:33:55.066 +07:00 [INF] HTTP GET /hangfire/css-dark18220552316931 responded 200 in 4.4471 ms
+2026-01-15 15:33:55.079 +07:00 [INF] HTTP GET /hangfire/css18220615421712 responded 200 in 17.3922 ms
+2026-01-15 15:33:55.092 +07:00 [INF] HTTP GET /hangfire/js182201486495648 responded 200 in 29.4816 ms
+2026-01-15 15:33:57.340 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 75.2285 ms
+2026-01-15 15:33:59.399 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 46.0370 ms
+2026-01-15 15:34:01.478 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 68.2185 ms
+2026-01-15 15:34:03.551 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 63.0696 ms
+2026-01-15 15:34:05.636 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 75.2189 ms
+2026-01-15 15:34:07.691 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 46.2267 ms
+2026-01-15 15:34:09.746 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 45.2588 ms
+2026-01-15 15:34:11.794 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 39.5225 ms
+2026-01-15 15:34:13.849 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 45.4173 ms
+2026-01-15 15:34:15.904 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 45.0936 ms
+2026-01-15 15:34:17.960 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 46.7155 ms
+2026-01-15 15:34:20.020 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 50.1926 ms
+2026-01-15 15:34:22.073 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 43.7326 ms
+2026-01-15 15:34:24.129 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 47.0842 ms
+2026-01-15 15:34:26.184 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 45.2922 ms
+2026-01-15 15:34:28.242 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 47.4638 ms
+2026-01-15 15:34:30.296 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 45.6315 ms
+2026-01-15 15:34:32.349 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 43.3537 ms
+2026-01-15 15:34:34.403 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 45.3499 ms
+2026-01-15 15:34:36.491 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 78.8896 ms
+2026-01-15 15:34:38.306 +07:00 [INF] HTTP GET /hangfire/recurring responded 200 in 107.2460 ms
+2026-01-15 15:34:40.336 +07:00 [INF] HTTP POST /hangfire/recurring/trigger responded 204 in 426.3328 ms
+2026-01-15 15:34:40.390 +07:00 [INF] HTTP GET /hangfire/recurring responded 200 in 40.9913 ms
+2026-01-15 15:34:40.528 +07:00 [INF] ========== Excel Import Job Started ==========
+2026-01-15 15:34:40.535 +07:00 [INF] Mode: SMB
+2026-01-15 15:34:44.840 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 10.2223 ms
+2026-01-15 15:34:48.432 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 35.8207 ms
+2026-01-15 15:34:50.281 +07:00 [INF] SMB:  Found 0 files matching *.xlsx
+2026-01-15 15:34:57.006 +07:00 [INF] No files found matching pattern *.xlsx
+2026-01-15 15:34:57.007 +07:00 [INF] ========== Job Completed in 16.48s ==========
+2026-01-15 15:34:57.019 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 13.2482 ms
+2026-01-15 15:34:59.033 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 7.2629 ms
+2026-01-15 15:35:01.046 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 7.1020 ms
+2026-01-15 15:35:03.064 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.4158 ms
+2026-01-15 15:35:05.081 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.5389 ms
+2026-01-15 15:35:07.100 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.2496 ms
+2026-01-15 15:35:09.120 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.8538 ms
+2026-01-15 15:35:11.138 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.8960 ms
+2026-01-15 15:35:13.162 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 15.0763 ms
+2026-01-15 15:35:15.180 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.9702 ms
+2026-01-15 15:35:17.198 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.3918 ms
+2026-01-15 15:35:19.216 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.4418 ms
+2026-01-15 15:35:21.236 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.1683 ms
+2026-01-15 15:35:23.252 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 10.2999 ms
+2026-01-15 15:35:25.270 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.4618 ms
+2026-01-15 15:35:27.287 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.3748 ms
+2026-01-15 15:35:29.307 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.9709 ms
+2026-01-15 15:35:31.322 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 9.6632 ms
+2026-01-15 15:35:33.339 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.6753 ms
+2026-01-15 15:35:35.356 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.1109 ms
+2026-01-15 15:35:37.386 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 24.3655 ms
+2026-01-15 15:35:39.406 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 13.7259 ms
+2026-01-15 15:35:41.425 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.7622 ms
+2026-01-15 15:35:43.451 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 19.5294 ms
+2026-01-15 15:35:45.492 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 35.0653 ms
+2026-01-15 15:35:47.511 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.3149 ms
+2026-01-15 15:35:49.531 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.7154 ms
+2026-01-15 15:35:51.549 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.5041 ms
+2026-01-15 15:35:53.569 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.8076 ms
+2026-01-15 15:35:55.586 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.3437 ms
+2026-01-15 15:35:57.604 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.1689 ms
+2026-01-15 15:35:59.623 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.2005 ms
+2026-01-15 15:36:01.640 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.9701 ms
+2026-01-15 15:36:03.657 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.5384 ms
+2026-01-15 15:36:05.681 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 18.5879 ms
+2026-01-15 15:36:07.699 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.3349 ms
+2026-01-15 15:36:09.717 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.6992 ms
+2026-01-15 15:36:11.737 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 13.3657 ms
+2026-01-15 15:36:13.756 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.9749 ms
+2026-01-15 15:36:15.773 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.0911 ms
+2026-01-15 15:36:17.792 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.5230 ms
+2026-01-15 15:36:19.810 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.6251 ms
+2026-01-15 15:36:21.830 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 13.8548 ms
+2026-01-15 15:36:24.144 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 10.4711 ms
+2026-01-15 15:36:27.144 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.3858 ms
+2026-01-15 15:36:30.145 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.6226 ms
+2026-01-15 15:36:33.145 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.7155 ms
+2026-01-15 15:36:36.145 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.2963 ms
+2026-01-15 15:36:39.147 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 13.6421 ms
+2026-01-15 15:36:42.147 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 13.0138 ms
+2026-01-15 15:36:45.144 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.4053 ms
+2026-01-15 15:36:48.159 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 21.4334 ms
+2026-01-15 15:36:51.221 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 87.4178 ms
+2026-01-15 15:36:54.145 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.1119 ms
+2026-01-15 15:36:57.144 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.0308 ms
+2026-01-15 15:37:00.146 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.0454 ms
+2026-01-15 15:37:03.146 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.8568 ms
+2026-01-15 15:37:06.145 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.6190 ms
+2026-01-15 15:37:09.145 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.9125 ms
+2026-01-15 15:37:12.145 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.0860 ms
+2026-01-15 15:37:15.145 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.4392 ms
+2026-01-15 15:37:18.144 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.6600 ms
+2026-01-15 15:37:21.144 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.4857 ms
+2026-01-15 15:37:24.144 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.4327 ms
+2026-01-15 15:37:27.151 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 17.8183 ms
+2026-01-15 15:37:30.144 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.4648 ms
+2026-01-15 15:37:33.145 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.6249 ms
+2026-01-15 15:37:36.145 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 10.9308 ms
+2026-01-15 15:37:39.146 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.6866 ms
+2026-01-15 15:37:42.146 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.5970 ms
+2026-01-15 15:37:45.146 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.6596 ms
+2026-01-15 15:37:48.146 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.5064 ms
+2026-01-15 15:37:51.146 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.2812 ms
+2026-01-15 15:37:54.155 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 22.0749 ms
+2026-01-15 15:37:57.169 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 35.8379 ms
+2026-01-15 15:38:00.147 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.7823 ms
+2026-01-15 15:38:03.145 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.8646 ms
+2026-01-15 15:38:06.144 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.6351 ms
+2026-01-15 15:38:09.145 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 10.8954 ms
+2026-01-15 15:38:12.145 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.3751 ms
+2026-01-15 15:38:15.145 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.1727 ms
+2026-01-15 15:38:18.144 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.2280 ms
+2026-01-15 15:38:21.145 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.5561 ms
+2026-01-15 15:38:24.144 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.5501 ms
+2026-01-15 15:38:27.144 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.0267 ms
+2026-01-15 15:38:30.144 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.7086 ms
+2026-01-15 15:38:33.145 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.6156 ms
+2026-01-15 15:38:36.145 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.8795 ms
+2026-01-15 15:38:39.145 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.5794 ms
+2026-01-15 15:38:42.146 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.0222 ms
+2026-01-15 15:38:45.144 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.2106 ms
+2026-01-15 15:38:48.145 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.5180 ms
+2026-01-15 15:38:51.145 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.3909 ms
+2026-01-15 15:38:51.723 +07:00 [INF] 1 servers were removed due to timeout
+2026-01-15 15:38:54.144 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.4024 ms
+2026-01-15 15:38:57.144 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.4095 ms
+2026-01-15 15:39:00.146 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 13.6330 ms
+2026-01-15 15:39:03.147 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 13.1648 ms
+2026-01-15 15:39:06.143 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 10.7068 ms
+2026-01-15 15:39:09.144 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.7450 ms
+2026-01-15 15:39:12.146 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.8170 ms
+2026-01-15 15:39:15.147 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 15.2520 ms
+2026-01-15 15:39:18.145 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.6866 ms
+2026-01-15 15:39:21.145 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.6155 ms
+2026-01-15 15:39:24.145 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 10.8371 ms
+2026-01-15 15:39:27.145 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.9188 ms
+2026-01-15 15:39:30.146 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.2070 ms
+2026-01-15 15:39:33.144 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.4460 ms
+2026-01-15 15:39:36.146 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 13.0069 ms
+2026-01-15 15:39:39.144 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.6270 ms
+2026-01-15 15:39:42.147 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.9301 ms
+2026-01-15 15:39:45.144 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.0433 ms
+2026-01-15 15:39:48.144 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.3462 ms
+2026-01-15 15:39:51.144 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.8716 ms
+2026-01-15 15:39:54.144 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.4510 ms
+2026-01-15 15:39:57.144 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.5595 ms
+2026-01-15 15:40:00.146 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 13.9817 ms
+2026-01-15 15:40:03.143 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 10.3796 ms
+2026-01-15 15:40:06.275 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 143.1053 ms
+2026-01-15 15:40:09.144 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.0055 ms
+2026-01-15 15:40:12.147 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 14.3031 ms
+2026-01-15 15:40:15.148 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 15.2182 ms
+2026-01-15 15:40:18.145 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.4804 ms
+2026-01-15 15:40:21.144 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 10.6405 ms
+2026-01-15 15:40:24.144 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.0565 ms
+2026-01-15 15:40:27.144 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.4520 ms
+2026-01-15 15:40:30.145 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.6062 ms
+2026-01-15 15:40:33.145 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.2612 ms
+2026-01-15 15:40:36.145 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.8382 ms
+2026-01-15 15:40:39.146 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.6954 ms
+2026-01-15 15:40:42.144 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.7144 ms
+2026-01-15 15:40:45.145 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.8515 ms
+2026-01-15 15:40:48.146 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.7403 ms
+2026-01-15 15:40:51.146 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 13.0473 ms
+2026-01-15 15:40:54.145 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.6349 ms
+2026-01-15 15:40:57.145 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.9415 ms
+2026-01-15 15:41:00.151 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 17.8237 ms
+2026-01-15 15:41:03.145 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.1999 ms
+2026-01-15 15:41:06.145 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.5889 ms
+2026-01-15 15:41:09.146 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.6848 ms
+2026-01-15 15:41:12.236 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 103.0634 ms
+2026-01-15 15:41:15.144 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.8380 ms
+2026-01-15 15:41:18.145 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.8560 ms
+2026-01-15 15:41:21.143 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.0506 ms
+2026-01-15 15:41:24.146 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.1355 ms
+2026-01-15 15:41:27.148 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.9892 ms
+2026-01-15 15:41:30.153 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.7689 ms
+2026-01-15 15:41:33.157 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.6706 ms
+2026-01-15 15:41:36.153 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.8079 ms
+2026-01-15 15:41:39.158 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 13.1651 ms
+2026-01-15 15:41:42.159 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.1296 ms
+2026-01-15 15:41:45.185 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 42.1630 ms
+2026-01-15 15:41:48.145 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.4950 ms
+2026-01-15 15:41:51.148 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.7162 ms
+2026-01-15 15:41:54.157 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 16.5739 ms
+2026-01-15 15:41:57.155 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 13.1125 ms
+2026-01-15 15:42:00.153 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.4399 ms
+2026-01-15 15:42:03.154 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 9.6570 ms
+2026-01-15 15:42:06.154 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.6247 ms
+2026-01-15 15:42:09.151 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.6165 ms
+2026-01-15 15:42:12.157 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.2230 ms
+2026-01-15 15:42:15.169 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 25.1158 ms
+2026-01-15 15:42:18.157 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.6635 ms
+2026-01-15 15:42:21.157 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.8782 ms
+2026-01-15 15:42:24.160 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.3453 ms
+2026-01-15 15:42:27.152 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.4447 ms
+2026-01-15 15:42:30.149 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 14.5810 ms
+2026-01-15 15:42:33.149 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 15.1571 ms
+2026-01-15 15:42:36.154 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.2745 ms
+2026-01-15 15:42:39.158 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.8096 ms
+2026-01-15 15:42:42.155 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.2119 ms
+2026-01-15 15:42:45.152 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.0570 ms
+2026-01-15 15:42:48.156 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 18.4586 ms
+2026-01-15 15:42:51.152 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 15.9402 ms
+2026-01-15 15:42:54.148 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 13.7178 ms
+2026-01-15 15:42:57.152 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.8627 ms
+2026-01-15 15:43:00.155 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.6194 ms
+2026-01-15 15:43:03.149 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 14.9662 ms
+2026-01-15 15:43:06.151 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 15.9312 ms
+2026-01-15 15:43:09.155 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 17.1219 ms
+2026-01-15 15:43:12.149 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 15.7505 ms
+2026-01-15 15:43:15.168 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 23.4063 ms
+2026-01-15 15:43:18.154 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.2299 ms
+2026-01-15 15:43:21.186 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 40.1936 ms
+2026-01-15 15:43:24.157 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 19.5004 ms
+2026-01-15 15:43:27.148 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 13.7832 ms
+2026-01-15 15:43:30.154 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.7025 ms
+2026-01-15 15:43:33.150 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.8540 ms
+2026-01-15 15:43:36.149 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.4977 ms
+2026-01-15 15:43:39.148 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.7762 ms
+2026-01-15 15:43:42.152 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.4181 ms
+2026-01-15 15:43:45.156 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.1157 ms
+2026-01-15 15:43:48.158 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.2290 ms
+2026-01-15 15:43:51.153 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.7246 ms
+2026-01-15 15:43:54.145 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.0556 ms
+2026-01-15 15:43:57.149 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.3569 ms
+2026-01-15 15:44:00.158 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.3417 ms
+2026-01-15 15:44:03.156 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.8281 ms
+2026-01-15 15:44:06.151 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.7439 ms
+2026-01-15 15:44:09.156 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.5033 ms
+2026-01-15 15:44:12.145 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.1289 ms
+2026-01-15 15:44:15.145 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.6623 ms
+2026-01-15 15:44:18.148 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.7376 ms
+2026-01-15 15:44:21.150 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.2451 ms
+2026-01-15 15:50:12.039 +07:00 [INF] SHS_Job_Integrate started.  Dashboard at /hangfire
+2026-01-15 15:50:12.280 +07:00 [INF] Now listening on: http://localhost:5152
+2026-01-15 15:50:12.407 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-01-15 15:50:12.408 +07:00 [INF] Hosting environment: Development
+2026-01-15 15:50:12.409 +07:00 [INF] Content root path: F:\SHS-Convert-HANA\SHS_Job_Integrate\SHS_Job_Integrate
+2026-01-15 15:50:12.427 +07:00 [INF] Server desktop-mca5920:20568:d6e02474 successfully announced in 18.6096 ms
+2026-01-15 15:50:12.433 +07:00 [INF] Server desktop-mca5920:20568:d6e02474 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, SqlServerHeartbeatProcess, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-01-15 15:50:12.466 +07:00 [INF] 1 servers were removed due to timeout
+2026-01-15 15:50:12.624 +07:00 [INF] Server desktop-mca5920:20568:d6e02474 all the dispatchers started
+2026-01-15 15:50:13.157 +07:00 [INF] HTTP GET / responded 200 in 54.6324 ms
+2026-01-15 15:50:13.236 +07:00 [INF] ========== Excel Import Job Started ==========
+2026-01-15 15:50:13.243 +07:00 [INF] Mode: SMB
+2026-01-15 15:50:19.756 +07:00 [INF] SMB:  Found 0 files matching *.xlsx;*.xls;*.csv
+2026-01-15 15:50:29.841 +07:00 [INF] No files found matching pattern *.xlsx;*.xls;*.csv
+2026-01-15 15:50:29.842 +07:00 [INF] ========== Job Completed in 16.61s ==========
+2026-01-15 15:51:04.313 +07:00 [INF] HTTP GET /hangfire responded 200 in 180.4796 ms
+2026-01-15 15:51:04.328 +07:00 [INF] HTTP GET /hangfire/css-dark182201014831114 responded 200 in 10.8225 ms
+2026-01-15 15:51:04.336 +07:00 [INF] HTTP GET /hangfire/css18220420516407 responded 200 in 17.9465 ms
+2026-01-15 15:51:04.346 +07:00 [INF] HTTP GET /hangfire/js182201111405079 responded 200 in 26.8243 ms
+2026-01-15 15:51:06.560 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 73.3387 ms
+2026-01-15 15:51:06.595 +07:00 [INF] HTTP GET /hangfire/recurring responded 200 in 58.5032 ms
+2026-01-15 15:51:08.709 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 15.4971 ms
+2026-01-15 15:51:09.236 +07:00 [INF] HTTP POST /hangfire/recurring/trigger responded 204 in 143.5804 ms
+2026-01-15 15:51:09.314 +07:00 [INF] HTTP GET /hangfire/recurring responded 200 in 62.8752 ms
+2026-01-15 15:51:09.317 +07:00 [INF] ========== Excel Import Job Started ==========
+2026-01-15 15:51:09.318 +07:00 [INF] Mode: SMB
+2026-01-15 15:51:25.218 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 10891.6331 ms
+2026-01-15 15:51:29.899 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 2461.6964 ms
+2026-01-15 15:51:35.207 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 24.6998 ms
+2026-01-15 15:52:10.948 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 2998.5697 ms
+2026-01-15 15:52:14.082 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 342.9003 ms
+2026-01-15 15:52:20.962 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 1198.2021 ms
+2026-01-15 15:52:28.515 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 22.6995 ms
+2026-01-15 15:52:35.470 +07:00 [INF] SMB:  Found 0 files matching *.xlsx;*.xls;*.csv
+2026-01-15 15:52:36.796 +07:00 [INF] No files found matching pattern *.xlsx;*.xls;*.csv
+2026-01-15 15:52:36.799 +07:00 [INF] ========== Job Completed in 87.48s ==========
+2026-01-15 15:52:37.545 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 68.0016 ms
+2026-01-15 15:52:39.570 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.1398 ms
+2026-01-15 15:52:41.590 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 13.1810 ms
+2026-01-15 15:52:43.616 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.1797 ms
+2026-01-15 15:52:45.640 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.8799 ms
+2026-01-15 15:52:48.151 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.2305 ms
+2026-01-15 15:52:51.153 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.6687 ms
+2026-01-15 15:52:54.164 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 24.4534 ms
+2026-01-15 15:52:57.145 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.3460 ms
+2026-01-15 15:53:00.160 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.0001 ms
+2026-01-15 15:53:03.150 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 14.6291 ms
+2026-01-15 15:53:06.157 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.5906 ms
+2026-01-15 15:53:09.192 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 50.8595 ms
+2026-01-15 15:53:11.240 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 39.3869 ms
+2026-01-15 15:53:13.286 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 36.3379 ms
+2026-01-15 15:53:15.306 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 13.0831 ms
+2026-01-15 15:53:18.157 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.3433 ms
+2026-01-15 15:53:21.160 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 17.7472 ms
+2026-01-15 15:53:24.153 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.6247 ms
+2026-01-15 15:53:27.147 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 13.6231 ms
+2026-01-15 15:53:30.150 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.1442 ms
+2026-01-15 15:53:33.156 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.8430 ms
+2026-01-15 15:53:36.156 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.3922 ms
+2026-01-15 15:53:38.703 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 13.4401 ms
+2026-01-15 15:53:40.724 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 13.2763 ms
+2026-01-15 15:53:42.587 +07:00 [INF] HTTP POST /hangfire/recurring/trigger responded 204 in 146.7749 ms
+2026-01-15 15:53:42.673 +07:00 [INF] HTTP GET /hangfire/recurring responded 200 in 69.5623 ms
+2026-01-15 15:53:42.674 +07:00 [INF] ========== Excel Import Job Started ==========
+2026-01-15 15:53:42.675 +07:00 [INF] Mode: SMB
+2026-01-15 15:53:45.419 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 7.6795 ms
+2026-01-15 15:53:49.870 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 14.2702 ms
+2026-01-15 15:53:58.618 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 1346.6648 ms
+2026-01-15 15:54:03.804 +07:00 [INF] SMB:  Found 0 files matching *.xlsx;*.xls;*.csv
+2026-01-15 15:54:04.954 +07:00 [INF] No files found matching pattern *.xlsx;*.xls;*.csv
+2026-01-15 15:54:04.956 +07:00 [INF] ========== Job Completed in 22.28s ==========
+2026-01-15 15:54:04.954 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 1150.1494 ms
+2026-01-15 15:54:06.995 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 6.9483 ms
+2026-01-15 15:54:09.023 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 7.1239 ms
+2026-01-15 15:54:11.045 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 13.8596 ms
+2026-01-15 15:54:13.149 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.5908 ms
+2026-01-15 15:54:16.146 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.2853 ms
+2026-01-15 15:54:19.158 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.3224 ms
+2026-01-15 15:54:22.162 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.4678 ms
+2026-01-15 15:54:25.149 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.7468 ms
+2026-01-15 15:54:28.159 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.0009 ms
+2026-01-15 15:54:31.151 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.1951 ms
+2026-01-15 15:54:34.158 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.7057 ms
+2026-01-15 15:54:37.151 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 10.3498 ms
+2026-01-15 15:54:40.155 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.0473 ms
+2026-01-15 15:54:43.146 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.0617 ms
+2026-01-15 15:54:46.158 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.6068 ms
+2026-01-15 15:54:49.155 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.3951 ms
+2026-01-15 15:54:52.156 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 13.4255 ms
+2026-01-15 15:54:55.148 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.3687 ms
+2026-01-15 15:54:58.149 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 13.7410 ms
+2026-01-15 15:55:01.152 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.5390 ms
+2026-01-15 15:55:04.146 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.1112 ms
+2026-01-15 15:55:07.146 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 10.9849 ms
+2026-01-15 15:55:10.149 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.7789 ms
+2026-01-15 15:55:13.152 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.2425 ms
+2026-01-15 15:55:16.157 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.8191 ms
+2026-01-15 15:55:19.148 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.6806 ms
+2026-01-15 15:55:22.176 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 38.3188 ms
+2026-01-15 15:55:25.156 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.3832 ms
+2026-01-15 15:55:28.150 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.2965 ms
+2026-01-15 15:55:31.145 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.6944 ms
+2026-01-15 15:55:34.153 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.0911 ms
+2026-01-15 15:55:37.157 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.7729 ms
+2026-01-15 15:55:40.153 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.6643 ms
+2026-01-15 15:55:43.155 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.6318 ms
+2026-01-15 15:55:46.152 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.9941 ms
+2026-01-15 15:55:49.157 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 10.1302 ms
+2026-01-15 15:55:52.148 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.4162 ms
+2026-01-15 15:55:55.146 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.8515 ms
+2026-01-15 15:55:58.159 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 16.2680 ms
+2026-01-15 15:56:01.147 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.3351 ms
+2026-01-15 15:56:01.704 +07:00 [INF] HTTP GET /hangfire/recurring responded 200 in 40.3758 ms
+2026-01-15 15:56:03.788 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.8646 ms
+2026-01-15 15:56:05.686 +07:00 [INF] HTTP POST /hangfire/recurring/trigger responded 204 in 130.8295 ms
+2026-01-15 15:56:05.764 +07:00 [INF] HTTP GET /hangfire/recurring responded 200 in 66.5695 ms
+2026-01-15 15:56:05.769 +07:00 [INF] ========== Excel Import Job Started ==========
+2026-01-15 15:56:05.770 +07:00 [INF] Mode: SMB
+2026-01-15 15:56:05.901 +07:00 [INF] SMB:  Found 1 files matching *.xlsx;*.xls;*.csv
+2026-01-15 15:56:10.343 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 7.4197 ms
+2026-01-15 15:56:11.653 +07:00 [INF] Found 1 file(s) to process
+2026-01-15 15:56:14.012 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 17.0102 ms
+2026-01-15 15:56:21.066 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 1353.0363 ms
+2026-01-15 15:56:22.499 +07:00 [INF] Processing: Copy of NGAY 25.12.2025 NIR.xls
+2026-01-15 15:56:23.089 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 6.6771 ms
+2026-01-15 15:56:23.240 +07:00 [INF] SMB: Downloaded SHS Excel\Copy of NGAY 25.12.2025 NIR.xls to ./temp\Copy of NGAY 25.12.2025 NIR.xls
+2026-01-15 15:56:24.183 +07:00 [INF] Reading file Copy of NGAY 25.12.2025 NIR.xls using XlsReader
+2026-01-15 15:56:24.282 +07:00 [INF] Read 43 rows, 16 columns from Copy of NGAY 25.12.2025 NIR.xls in  F2ms
+2026-01-15 15:56:25.784 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 16.6428 ms
+2026-01-15 15:56:25.811 +07:00 [INF] Read 43 rows, 19 columns
+2026-01-15 15:57:05.083 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 3422.8968 ms
+2026-01-15 15:57:11.167 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.5597 ms
+2026-01-15 15:57:20.735 +07:00 [ERR] ✗ Error processing Copy of NGAY 25.12.2025 NIR.xls
+System.TypeInitializationException: The type initializer for 'Sap.Data.Hana.HanaConnection' threw an exception.
+ ---> System.IO.FileNotFoundException: Cannot find a matching libadonetHDB.dll with version 2.21.28 - check the location in the HDBDOTNETCORE or PATH / LD_LIBRARY_PATH / DYLD_LIBRARY_PATH environment variables
+
+Searched paths and results: 
+
+   at Sap.Data.Hana.HanaUnmanagedDll.SearchNativeDlls()
+   at Sap.Data.Hana.HanaUnmanagedDll..ctor()
+   at Sap.Data.Hana.HanaUnmanagedDll.get_Instance()
+   at Sap.Data.Hana.HanaConnection..cctor()
+   --- End of inner exception stack trace ---
+   at Sap.Data.Hana.HanaConnection..ctor(String connectionString)
+   at SHS_Job_Integrate.Services.Database.HanaDbService.GetConnectionAsync(CancellationToken ct)
+   at SHS_Job_Integrate.Services.Database.HanaDbService.DropTempTableAsync(String tempTableName, CancellationToken ct)
+   at SHS_Job_Integrate.Services.Database.HanaDbService.ProcessWithTempTableAsync(String tempTableName, DataTable data, String procedureName, CancellationToken ct)
+   at SHS_Job_Integrate.Jobs.ExcelImportJob.ExecuteAsync(CancellationToken ct)
+2026-01-15 15:57:20.750 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 15.3034 ms
+2026-01-15 15:57:20.778 +07:00 [INF] ========== Job Completed in 75.01s ==========
+2026-01-15 15:57:22.803 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 6.8475 ms
+2026-01-15 15:57:24.827 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 6.0208 ms
+2026-01-15 15:57:26.858 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.8223 ms
+2026-01-15 15:57:28.887 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.2862 ms
+2026-01-15 15:57:30.914 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.1877 ms
+2026-01-15 15:57:33.066 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 140.8152 ms
+2026-01-15 15:57:35.106 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 27.9441 ms
+2026-01-15 15:57:37.137 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.7589 ms
+2026-01-15 15:57:39.168 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.0846 ms
+2026-01-15 15:57:41.196 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.3765 ms
+2026-01-15 15:57:43.229 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.6962 ms
+2026-01-15 15:57:45.247 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.8151 ms
+2026-01-15 15:57:47.268 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.9757 ms
+2026-01-15 15:57:49.292 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.5961 ms
+2026-01-15 15:57:51.320 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 10.8755 ms
+2026-01-15 15:57:53.350 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.0488 ms
+2026-01-15 15:57:55.383 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.6028 ms
+2026-01-15 15:57:57.410 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.5169 ms
+2026-01-15 15:57:59.436 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 10.9477 ms
+2026-01-15 15:58:01.463 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.1295 ms
+2026-01-15 15:58:03.488 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 15.0477 ms
+2026-01-15 15:58:05.515 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.1736 ms
+2026-01-15 15:58:07.544 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 14.3561 ms
+2026-01-15 15:58:09.572 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.3681 ms
+2026-01-15 15:58:11.604 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.4038 ms
+2026-01-15 15:58:13.627 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 13.3853 ms
+2026-01-15 15:58:15.659 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.7794 ms
+2026-01-15 15:58:17.677 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.5051 ms
+2026-01-15 15:58:19.706 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.5404 ms
+2026-01-15 15:58:21.733 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.6757 ms
+2026-01-15 15:58:23.760 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.7143 ms
+2026-01-15 15:58:25.781 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.6589 ms
+2026-01-15 15:58:27.800 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.6487 ms
+2026-01-15 15:58:29.827 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.0225 ms
+2026-01-15 15:58:31.847 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.0684 ms
+2026-01-15 15:58:33.866 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.5827 ms
+2026-01-15 15:58:35.886 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 10.5512 ms
+2026-01-15 15:58:37.916 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 17.1559 ms
+2026-01-15 15:58:39.943 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 15.7268 ms
+2026-01-15 15:58:42.151 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.3206 ms
+2026-01-15 15:58:45.171 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 27.6010 ms
+2026-01-15 15:58:48.160 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.6363 ms
+2026-01-15 15:58:51.153 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 10.2639 ms
+2026-01-15 15:58:54.151 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.6748 ms
+2026-01-15 15:58:57.151 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.2657 ms
+2026-01-15 15:59:00.152 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.9815 ms
+2026-01-15 15:59:03.143 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 10.3253 ms
+2026-01-15 15:59:06.147 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.6225 ms
+2026-01-15 15:59:09.147 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.2383 ms
+2026-01-15 15:59:12.155 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.2549 ms
+2026-01-15 15:59:15.155 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.5886 ms
+2026-01-15 15:59:18.152 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.4038 ms
+2026-01-15 15:59:21.152 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 13.4720 ms
+2026-01-15 15:59:21.194 +07:00 [INF] ========== Excel Import Job Started ==========
+2026-01-15 15:59:21.194 +07:00 [INF] Mode: SMB
+2026-01-15 15:59:21.386 +07:00 [INF] SMB:  Found 1 files matching *.xlsx;*.xls;*.csv
+2026-01-15 15:59:25.215 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 7.8965 ms
+2026-01-15 15:59:25.262 +07:00 [INF] Found 1 file(s) to process
+2026-01-15 15:59:25.263 +07:00 [INF] Processing: Copy of NGAY 25.12.2025 NIR.xls
+2026-01-15 15:59:25.397 +07:00 [INF] SMB: Downloaded SHS Excel\Copy of NGAY 25.12.2025 NIR.xls to ./temp\Copy of NGAY 25.12.2025 NIR.xls
+2026-01-15 15:59:25.400 +07:00 [INF] Reading file Copy of NGAY 25.12.2025 NIR.xls using XlsReader
+2026-01-15 15:59:25.436 +07:00 [INF] Read 43 rows, 16 columns from Copy of NGAY 25.12.2025 NIR.xls in  F2ms
+2026-01-15 15:59:25.437 +07:00 [INF] Read 43 rows, 19 columns
+2026-01-15 15:59:25.650 +07:00 [ERR] ✗ Error processing Copy of NGAY 25.12.2025 NIR.xls
+System.TypeInitializationException: The type initializer for 'Sap.Data.Hana.HanaConnection' threw an exception.
+ ---> System.IO.FileNotFoundException: Cannot find a matching libadonetHDB.dll with version 2.21.28 - check the location in the HDBDOTNETCORE or PATH / LD_LIBRARY_PATH / DYLD_LIBRARY_PATH environment variables
+
+Searched paths and results: 
+
+   at Sap.Data.Hana.HanaUnmanagedDll.SearchNativeDlls()
+   at Sap.Data.Hana.HanaUnmanagedDll..ctor()
+   at Sap.Data.Hana.HanaUnmanagedDll.get_Instance()
+   at Sap.Data.Hana.HanaConnection..cctor()
+   --- End of inner exception stack trace ---
+   at Sap.Data.Hana.HanaConnection..ctor(String connectionString)
+   at SHS_Job_Integrate.Services.Database.HanaDbService.GetConnectionAsync(CancellationToken ct)
+   at SHS_Job_Integrate.Services.Database.HanaDbService.DropTempTableAsync(String tempTableName, CancellationToken ct)
+   at SHS_Job_Integrate.Services.Database.HanaDbService.ProcessWithTempTableAsync(String tempTableName, DataTable data, String procedureName, CancellationToken ct)
+   at SHS_Job_Integrate.Jobs.ExcelImportJob.ExecuteAsync(CancellationToken ct)
+2026-01-15 15:59:25.657 +07:00 [INF] ========== Job Completed in 4.46s ==========
+2026-01-15 15:59:26.265 +07:00 [INF] HTTP GET /hangfire/recurring responded 200 in 38.7339 ms
+2026-01-15 15:59:29.157 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 10.8056 ms
+2026-01-15 15:59:32.162 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 20.4836 ms
+2026-01-15 15:59:35.153 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.0652 ms
+2026-01-15 15:59:38.152 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 10.7556 ms
+2026-01-15 15:59:41.157 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 18.0180 ms
+2026-01-15 15:59:44.179 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 42.4454 ms
+2026-01-15 15:59:46.208 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.3870 ms
+2026-01-15 15:59:49.147 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.9669 ms
+2026-01-15 15:59:51.176 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.5045 ms
+2026-01-15 15:59:53.216 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 31.0365 ms
+2026-01-15 15:59:55.562 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 14.2551 ms
+2026-01-15 16:04:43.088 +07:00 [INF] SHS_Job_Integrate started.  Dashboard at /hangfire
+2026-01-15 16:04:43.306 +07:00 [INF] Now listening on: http://localhost:5152
+2026-01-15 16:04:43.433 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-01-15 16:04:43.435 +07:00 [INF] Hosting environment: Development
+2026-01-15 16:04:43.435 +07:00 [INF] Content root path: F:\SHS-Convert-HANA\SHS_Job_Integrate\SHS_Job_Integrate
+2026-01-15 16:04:43.452 +07:00 [INF] Server desktop-mca5920:51988:5d45a89b successfully announced in 17.3854 ms
+2026-01-15 16:04:43.459 +07:00 [INF] Server desktop-mca5920:51988:5d45a89b is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, SqlServerHeartbeatProcess, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-01-15 16:04:43.525 +07:00 [INF] 1 servers were removed due to timeout
+2026-01-15 16:04:43.651 +07:00 [INF] Server desktop-mca5920:51988:5d45a89b all the dispatchers started
+2026-01-15 16:04:44.447 +07:00 [INF] HTTP GET / responded 200 in 43.2764 ms
+2026-01-15 16:04:52.495 +07:00 [INF] HTTP GET /hangfire responded 200 in 248.4003 ms
+2026-01-15 16:04:52.504 +07:00 [INF] HTTP GET /hangfire/css-dark18220151303377 responded 200 in 4.3098 ms
+2026-01-15 16:04:52.507 +07:00 [INF] HTTP GET /hangfire/css182202022703826 responded 200 in 6.7080 ms
+2026-01-15 16:04:52.518 +07:00 [INF] HTTP GET /hangfire/js182201490551323 responded 200 in 16.6034 ms
+2026-01-15 16:04:54.742 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 69.7843 ms
+2026-01-15 16:04:56.800 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 45.9334 ms
+2026-01-15 16:04:58.262 +07:00 [INF] HTTP GET /hangfire/recurring responded 200 in 97.5562 ms
+2026-01-15 16:05:00.369 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.4841 ms
+2026-01-15 16:05:02.392 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.9575 ms
+2026-01-15 16:05:04.416 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.0000 ms
+2026-01-15 16:05:06.440 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 13.7555 ms
+2026-01-15 16:05:08.462 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.8337 ms
+2026-01-15 16:05:10.563 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 85.0351 ms
+2026-01-15 16:05:12.586 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 14.6864 ms
+2026-01-15 16:05:14.676 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 82.6025 ms
+2026-01-15 16:05:16.337 +07:00 [INF] HTTP POST /hangfire/recurring/trigger responded 204 in 247.5324 ms
+2026-01-15 16:05:16.399 +07:00 [INF] HTTP GET /hangfire/recurring responded 200 in 45.7012 ms
+2026-01-15 16:05:16.512 +07:00 [INF] ========== Excel Import Job Started ==========
+2026-01-15 16:05:16.519 +07:00 [INF] Mode: SMB
+2026-01-15 16:05:16.747 +07:00 [INF] SMB:  Found 1 files matching *.xlsx;*.xls;*.csv
+2026-01-15 16:05:16.769 +07:00 [INF] Found 1 file(s) to process
+2026-01-15 16:05:16.770 +07:00 [INF] Processing: Copy of NGAY 25.12.2025 NIR.xls
+2026-01-15 16:05:16.900 +07:00 [INF] SMB: Downloaded SHS Excel\Copy of NGAY 25.12.2025 NIR.xls to ./temp\Copy of NGAY 25.12.2025 NIR.xls
+2026-01-15 16:05:16.933 +07:00 [INF] Reading file Copy of NGAY 25.12.2025 NIR.xls using XlsReader
+2026-01-15 16:05:17.021 +07:00 [INF] Read 43 rows, 16 columns from Copy of NGAY 25.12.2025 NIR.xls in  F2ms
+2026-01-15 16:05:17.022 +07:00 [INF] Read 43 rows, 19 columns
+2026-01-15 16:05:18.668 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 9.3877 ms
+2026-01-15 16:05:21.371 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 594.7507 ms
+2026-01-15 16:05:23.788 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 29.3109 ms
+2026-01-15 16:05:45.658 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 13.4140 ms
+2026-01-15 16:05:47.684 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 7.0203 ms
+2026-01-15 16:05:51.151 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 24.6566 ms
+2026-01-15 16:05:59.453 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.9087 ms
+2026-01-15 16:06:03.508 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 7.3165 ms
+2026-01-15 16:06:03.545 +07:00 [ERR] ✗ Error processing Copy of NGAY 25.12.2025 NIR.xls
+Sap.Data.Hana.HanaException (0x80004005): Connection failed (RTE:[89006] System call 'connect' failed, rc=10061:No connection could be made because the target machine actively refused it {172.16.8.40:30015} (172.16.8.40:30015))
+   at Sap.Data.Hana.HanaConnection.Open()
+   at System.Data.Common.DbConnection.OpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at SHS_Job_Integrate.Services.Database.HanaDbService.GetConnectionAsync(CancellationToken ct) in F:\SHS-Convert-HANA\SHS_Job_Integrate\SHS_Job_Integrate\Services\Database\HanaDbService.cs:line 25
+   at SHS_Job_Integrate.Services.Database.HanaDbService.CreateTempTableAsync(String tempTableName, DataTable schema, CancellationToken ct) in F:\SHS-Convert-HANA\SHS_Job_Integrate\SHS_Job_Integrate\Services\Database\HanaDbService.cs:line 71
+   at SHS_Job_Integrate.Services.Database.HanaDbService.ProcessWithTempTableAsync(String tempTableName, DataTable data, String procedureName, CancellationToken ct) in F:\SHS-Convert-HANA\SHS_Job_Integrate\SHS_Job_Integrate\Services\Database\HanaDbService.cs:line 42
+   at SHS_Job_Integrate.Services.Database.HanaDbService.ProcessWithTempTableAsync(String tempTableName, DataTable data, String procedureName, CancellationToken ct) in F:\SHS-Convert-HANA\SHS_Job_Integrate\SHS_Job_Integrate\Services\Database\HanaDbService.cs:line 63
+   at SHS_Job_Integrate.Jobs.ExcelImportJob.ExecuteAsync(CancellationToken ct) in F:\SHS-Convert-HANA\SHS_Job_Integrate\SHS_Job_Integrate\Jobs\ExcelImportJob.cs:line 99
+2026-01-15 16:06:03.576 +07:00 [INF] ========== Job Completed in 47.06s ==========
+2026-01-15 16:06:05.546 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 16.5663 ms
+2026-01-15 16:06:07.575 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.2931 ms
+2026-01-15 16:06:09.602 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.8893 ms
+2026-01-15 16:06:11.632 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.9272 ms
+2026-01-15 16:06:13.664 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 21.4306 ms
+2026-01-15 16:06:15.693 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 14.9429 ms
+2026-01-15 16:06:17.722 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 18.2487 ms
+2026-01-15 16:06:19.855 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 114.5404 ms
+2026-01-15 16:06:21.886 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 10.7081 ms
+2026-01-15 16:06:23.904 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.0432 ms
+2026-01-15 16:06:25.927 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.7295 ms
+2026-01-15 16:06:27.963 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 25.5945 ms
+2026-01-15 16:06:29.984 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.4485 ms
+2026-01-15 16:06:32.009 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.3149 ms
+2026-01-15 16:06:34.048 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 22.9701 ms
+2026-01-15 16:06:36.070 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.0873 ms
+2026-01-15 16:06:38.088 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.1135 ms
+2026-01-15 16:06:40.115 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 9.7135 ms
+2026-01-15 16:06:42.146 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 14.0508 ms
+2026-01-15 16:06:44.231 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 67.9462 ms
+2026-01-15 16:06:46.251 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.9990 ms
+2026-01-15 16:06:48.285 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.3415 ms
+2026-01-15 16:06:50.304 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.6766 ms
+2026-01-15 16:06:52.332 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.4369 ms
+2026-01-15 16:06:54.359 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.0200 ms
+2026-01-15 16:07:20.497 +07:00 [INF] SHS_Job_Integrate started.  Dashboard at /hangfire
+2026-01-15 16:07:20.712 +07:00 [INF] Now listening on: http://localhost:5152
+2026-01-15 16:07:20.837 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-01-15 16:07:20.838 +07:00 [INF] Hosting environment: Development
+2026-01-15 16:07:20.839 +07:00 [INF] Content root path: F:\SHS-Convert-HANA\SHS_Job_Integrate\SHS_Job_Integrate
+2026-01-15 16:07:20.855 +07:00 [INF] Server desktop-mca5920:27556:2f8fed41 successfully announced in 17.0314 ms
+2026-01-15 16:07:20.861 +07:00 [INF] Server desktop-mca5920:27556:2f8fed41 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, SqlServerHeartbeatProcess, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-01-15 16:07:21.044 +07:00 [INF] Server desktop-mca5920:27556:2f8fed41 all the dispatchers started
+2026-01-15 16:07:21.536 +07:00 [INF] HTTP GET / responded 200 in 91.4377 ms
+2026-01-15 16:07:25.522 +07:00 [INF] HTTP GET /hangfire responded 200 in 482.1959 ms
+2026-01-15 16:07:25.530 +07:00 [INF] HTTP GET /hangfire/css-dark18220979749828 responded 200 in 4.0662 ms
+2026-01-15 16:07:25.533 +07:00 [INF] HTTP GET /hangfire/css18220995545629 responded 200 in 6.6090 ms
+2026-01-15 16:07:25.543 +07:00 [INF] HTTP GET /hangfire/js18220807107548 responded 200 in 15.7999 ms
+2026-01-15 16:07:27.745 +07:00 [INF] HTTP GET /hangfire/recurring responded 200 in 95.8047 ms
+2026-01-15 16:07:27.767 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 72.0231 ms
+2026-01-15 16:07:29.845 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.6455 ms
+2026-01-15 16:07:30.237 +07:00 [INF] HTTP POST /hangfire/recurring/trigger responded 204 in 239.4019 ms
+2026-01-15 16:07:30.297 +07:00 [INF] HTTP GET /hangfire/recurring responded 200 in 46.9524 ms
+2026-01-15 16:07:30.418 +07:00 [INF] ========== Excel Import Job Started ==========
+2026-01-15 16:07:30.425 +07:00 [INF] Mode: SMB
+2026-01-15 16:07:30.637 +07:00 [INF] SMB:  Found 1 files matching *.xlsx;*.xls;*.csv
+2026-01-15 16:07:30.667 +07:00 [INF] Found 1 file(s) to process
+2026-01-15 16:07:30.668 +07:00 [INF] Processing: Copy of NGAY 25.12.2025 NIR.xls
+2026-01-15 16:07:30.767 +07:00 [INF] SMB: Downloaded SHS Excel\Copy of NGAY 25.12.2025 NIR.xls to ./temp\Copy of NGAY 25.12.2025 NIR.xls
+2026-01-15 16:07:30.800 +07:00 [INF] Reading file Copy of NGAY 25.12.2025 NIR.xls using XlsReader
+2026-01-15 16:07:30.887 +07:00 [INF] Read 43 rows, 16 columns from Copy of NGAY 25.12.2025 NIR.xls in  F2ms
+2026-01-15 16:07:30.889 +07:00 [INF] Read 43 rows, 19 columns
+2026-01-15 16:07:32.983 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 8.3080 ms
+2026-01-15 16:07:36.703 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 17.6965 ms
+2026-01-15 16:07:42.818 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 2181.9182 ms
+2026-01-15 16:07:45.541 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 583.3313 ms
+2026-01-15 16:07:50.200 +07:00 [ERR] ✗ Error processing Copy of NGAY 25.12.2025 NIR.xls
+Sap.Data.Hana.HanaException (0x80004005): authentication failed
+   at Sap.Data.Hana.HanaConnection.Open()
+   at System.Data.Common.DbConnection.OpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at SHS_Job_Integrate.Services.Database.HanaDbService.GetConnectionAsync(CancellationToken ct) in F:\SHS-Convert-HANA\SHS_Job_Integrate\SHS_Job_Integrate\Services\Database\HanaDbService.cs:line 25
+   at SHS_Job_Integrate.Services.Database.HanaDbService.CreateTempTableAsync(String tempTableName, DataTable schema, CancellationToken ct) in F:\SHS-Convert-HANA\SHS_Job_Integrate\SHS_Job_Integrate\Services\Database\HanaDbService.cs:line 71
+   at SHS_Job_Integrate.Services.Database.HanaDbService.ProcessWithTempTableAsync(String tempTableName, DataTable data, String procedureName, CancellationToken ct) in F:\SHS-Convert-HANA\SHS_Job_Integrate\SHS_Job_Integrate\Services\Database\HanaDbService.cs:line 42
+   at SHS_Job_Integrate.Services.Database.HanaDbService.ProcessWithTempTableAsync(String tempTableName, DataTable data, String procedureName, CancellationToken ct) in F:\SHS-Convert-HANA\SHS_Job_Integrate\SHS_Job_Integrate\Services\Database\HanaDbService.cs:line 63
+   at SHS_Job_Integrate.Jobs.ExcelImportJob.ExecuteAsync(CancellationToken ct) in F:\SHS-Convert-HANA\SHS_Job_Integrate\SHS_Job_Integrate\Jobs\ExcelImportJob.cs:line 99
+2026-01-15 16:07:50.214 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 14.2067 ms
+2026-01-15 16:07:50.232 +07:00 [INF] ========== Job Completed in 19.81s ==========
+2026-01-15 16:07:52.258 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 6.7058 ms
+2026-01-15 16:07:54.283 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 10.7656 ms
+2026-01-15 16:07:57.149 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.6514 ms
+2026-01-15 16:08:00.153 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.2095 ms
+2026-01-15 16:08:03.151 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.0388 ms
+2026-01-15 16:08:06.160 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.5323 ms
+2026-01-15 16:08:09.149 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.9523 ms
+2026-01-15 16:08:11.175 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.2898 ms
+2026-01-15 16:08:12.126 +07:00 [INF] HTTP POST /hangfire/recurring/trigger responded 204 in 129.5703 ms
+2026-01-15 16:08:12.203 +07:00 [INF] HTTP GET /hangfire/recurring responded 200 in 61.0358 ms
+2026-01-15 16:08:12.209 +07:00 [INF] ========== Excel Import Job Started ==========
+2026-01-15 16:08:12.210 +07:00 [INF] Mode: SMB
+2026-01-15 16:08:12.338 +07:00 [INF] SMB:  Found 1 files matching *.xlsx;*.xls;*.csv
+2026-01-15 16:08:12.368 +07:00 [INF] Found 1 file(s) to process
+2026-01-15 16:08:12.370 +07:00 [INF] Processing: Copy of NGAY 25.12.2025 NIR.xls
+2026-01-15 16:08:12.434 +07:00 [INF] SMB: Downloaded SHS Excel\Copy of NGAY 25.12.2025 NIR.xls to ./temp\Copy of NGAY 25.12.2025 NIR.xls
+2026-01-15 16:08:12.438 +07:00 [INF] Reading file Copy of NGAY 25.12.2025 NIR.xls using XlsReader
+2026-01-15 16:08:12.472 +07:00 [INF] Read 43 rows, 16 columns from Copy of NGAY 25.12.2025 NIR.xls in  F2ms
+2026-01-15 16:08:12.474 +07:00 [INF] Read 43 rows, 19 columns
+2026-01-15 16:08:14.415 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.9557 ms
+2026-01-15 16:08:16.446 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 7.1167 ms
+2026-01-15 16:08:26.141 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 7054.9560 ms
+2026-01-15 16:08:31.510 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 29.1824 ms
+2026-01-15 16:08:35.596 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 8.0906 ms
+2026-01-15 16:08:39.333 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 1233.9697 ms
+2026-01-15 16:08:41.687 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 250.0449 ms
+2026-01-15 16:08:44.043 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 8.8096 ms
+2026-01-15 16:08:46.787 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 327.2072 ms
+2026-01-15 16:08:49.022 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 9.3911 ms
+2026-01-15 16:08:59.749 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 8139.9833 ms
+2026-01-15 16:09:07.357 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 1094.8612 ms
+2026-01-15 16:09:13.396 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 19.6304 ms
+2026-01-15 16:09:25.178 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 6159.6923 ms
+2026-01-15 16:09:33.176 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 10.7265 ms
+2026-01-15 16:09:36.341 +07:00 [ERR] ✗ Error processing Copy of NGAY 25.12.2025 NIR.xls
+Sap.Data.Hana.HanaException (0x80004005): invalid name of function or procedure: no procedure with name SP_PROCESS_EXCEL_IMPORT found: line 1 col 6 (at pos 5)
+   at Sap.Data.Hana.HanaCommand._ExecuteNonQuery()
+   at Sap.Data.Hana.HanaCommand.ExecuteNonQuery()
+   at System.Data.Common.DbCommand.ExecuteNonQueryAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at SHS_Job_Integrate.Services.Database.HanaDbService.ExecuteProcedureAsync(String procedureName, Dictionary`2 parameters, CancellationToken ct) in F:\SHS-Convert-HANA\SHS_Job_Integrate\SHS_Job_Integrate\Services\Database\HanaDbService.cs:line 171
+   at SHS_Job_Integrate.Services.Database.HanaDbService.ProcessWithTempTableAsync(String tempTableName, DataTable data, String procedureName, CancellationToken ct) in F:\SHS-Convert-HANA\SHS_Job_Integrate\SHS_Job_Integrate\Services\Database\HanaDbService.cs:line 50
+   at SHS_Job_Integrate.Services.Database.HanaDbService.ProcessWithTempTableAsync(String tempTableName, DataTable data, String procedureName, CancellationToken ct) in F:\SHS-Convert-HANA\SHS_Job_Integrate\SHS_Job_Integrate\Services\Database\HanaDbService.cs:line 63
+   at SHS_Job_Integrate.Jobs.ExcelImportJob.ExecuteAsync(CancellationToken ct) in F:\SHS-Convert-HANA\SHS_Job_Integrate\SHS_Job_Integrate\Jobs\ExcelImportJob.cs:line 99
+2026-01-15 16:09:36.341 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 42.8234 ms
+2026-01-15 16:09:36.347 +07:00 [INF] ========== Job Completed in 84.14s ==========
+2026-01-15 16:09:38.370 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.4031 ms
+2026-01-15 16:09:39.062 +07:00 [INF] HTTP GET /.well-known/appspecific/com.chrome.devtools.json responded 404 in 0.2091 ms
+2026-01-15 16:09:39.256 +07:00 [INF] HTTP GET /hangfire/bootstrap.min.css.map responded 404 in 0.4572 ms
+2026-01-15 16:09:40.401 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.9104 ms
+2026-01-15 16:09:42.427 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.1723 ms
+2026-01-15 16:09:44.462 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.6341 ms
+2026-01-15 16:09:46.485 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.7666 ms
+2026-01-15 16:09:48.506 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 13.7467 ms
+2026-01-15 16:09:50.526 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 13.7918 ms
+2026-01-15 16:09:52.558 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 19.6419 ms
+2026-01-15 16:09:54.591 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.2206 ms
+2026-01-15 16:09:56.617 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.5407 ms
+2026-01-15 16:09:58.641 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.0842 ms
+2026-01-15 16:10:00.674 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 16.8637 ms
+2026-01-15 16:10:02.692 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.7849 ms
+2026-01-15 16:10:04.724 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.5446 ms
+2026-01-15 16:10:06.755 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.3027 ms
+2026-01-15 16:10:08.776 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.1623 ms
+2026-01-15 16:10:10.796 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 10.8332 ms
+2026-01-15 16:10:12.825 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.6438 ms
+2026-01-15 16:10:14.850 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.4946 ms
+2026-01-15 16:10:16.882 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 17.2786 ms
+2026-01-15 16:10:18.908 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.7570 ms
+2026-01-15 16:10:21.146 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.4245 ms
+2026-01-15 16:10:23.187 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 31.1678 ms
+2026-01-15 16:10:25.216 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.8227 ms
+2026-01-15 16:10:27.239 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 10.9006 ms
+2026-01-15 16:10:29.261 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.6168 ms
+2026-01-15 16:10:31.288 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.5692 ms
+2026-01-15 16:10:33.318 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 17.0105 ms
+2026-01-15 16:10:35.341 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.4928 ms
+2026-01-15 16:10:37.381 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.1691 ms
+2026-01-15 16:10:39.412 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.5513 ms
+2026-01-15 16:10:41.578 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 145.7355 ms
+2026-01-15 16:10:43.599 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.9900 ms
+2026-01-15 16:10:45.622 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 14.8504 ms
+2026-01-15 16:10:47.653 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.4623 ms
+2026-01-15 16:10:49.678 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.0111 ms
+2026-01-15 16:10:51.708 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 13.3392 ms
+2026-01-15 16:10:53.734 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.1068 ms
+2026-01-15 16:10:55.761 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.0484 ms
+2026-01-15 16:10:58.155 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.9340 ms
+2026-01-15 16:11:01.151 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.3476 ms
+2026-01-15 16:11:04.153 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.2248 ms
+2026-01-15 16:11:07.152 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 10.1610 ms
+2026-01-15 16:11:10.157 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 19.7139 ms
+2026-01-15 16:11:13.153 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 13.7746 ms
+2026-01-15 16:11:16.152 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.4277 ms
+2026-01-15 16:11:19.152 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.3647 ms
+2026-01-15 16:11:22.150 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 13.4477 ms
+2026-01-15 16:11:25.153 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.6144 ms
+2026-01-15 16:11:28.144 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.9683 ms
+2026-01-15 16:11:31.145 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.0772 ms
+2026-01-15 16:11:34.149 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 10.9092 ms
+2026-01-15 16:11:37.159 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.4201 ms
+2026-01-15 16:11:40.151 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.8722 ms
+2026-01-15 16:11:43.146 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.3342 ms
+2026-01-15 16:11:46.240 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 93.6003 ms
+2026-01-15 16:11:49.150 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.2037 ms
+2026-01-15 16:11:52.163 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 16.8155 ms
+2026-01-15 16:11:55.151 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.3594 ms
+2026-01-15 16:11:58.183 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 39.6696 ms
+2026-01-15 16:12:01.151 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.9847 ms
+2026-01-15 16:12:04.152 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.3064 ms
+2026-01-15 16:12:06.248 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 15.6459 ms
+2026-01-15 16:12:09.145 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.3306 ms
+2026-01-15 16:12:11.168 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 14.1451 ms
+2026-01-15 16:12:14.153 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.2002 ms
+2026-01-15 16:12:17.151 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.8811 ms
+2026-01-15 16:12:20.148 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.1685 ms
+2026-01-15 16:12:20.906 +07:00 [INF] 1 servers were removed due to timeout
+2026-01-15 16:12:23.152 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.0778 ms
+2026-01-15 16:12:26.150 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.0929 ms
+2026-01-15 16:12:29.156 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.2927 ms
+2026-01-15 16:12:32.152 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 14.6393 ms
+2026-01-15 16:12:35.170 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 22.6837 ms
+2026-01-15 16:12:38.159 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.1074 ms
+2026-01-15 16:12:41.160 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 13.6489 ms
+2026-01-15 16:12:44.147 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.8536 ms
+2026-01-15 16:12:47.151 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 13.4104 ms
+2026-01-15 16:12:50.180 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 32.6156 ms
+2026-01-15 16:12:53.144 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 10.6755 ms
+2026-01-15 16:12:56.158 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 14.4248 ms
+2026-01-15 16:12:59.153 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.7777 ms
+2026-01-15 16:13:02.149 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.0768 ms
+2026-01-15 16:13:05.186 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 40.6529 ms
+2026-01-15 16:13:08.158 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.1995 ms
+2026-01-15 16:13:11.148 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.4030 ms
+2026-01-15 16:13:14.155 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.2102 ms
+2026-01-15 16:13:17.154 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 13.5919 ms
+2026-01-15 16:13:20.147 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.5764 ms
+2026-01-15 16:13:23.144 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 10.6610 ms
+2026-01-15 16:13:26.159 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.4158 ms
+2026-01-15 16:13:29.153 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.8814 ms
+2026-01-15 16:13:32.160 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 13.1486 ms
+2026-01-15 16:13:35.149 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.2225 ms
+2026-01-15 16:13:38.159 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.9948 ms
+2026-01-15 16:13:41.159 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.7267 ms
+2026-01-15 16:13:44.145 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.4152 ms
+2026-01-15 16:13:47.158 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.2743 ms
+2026-01-15 16:13:50.155 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.0531 ms
+2026-01-15 16:13:53.148 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.8341 ms
+2026-01-15 16:13:56.159 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.2277 ms
+2026-01-15 16:13:59.159 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 22.2734 ms
+2026-01-15 16:14:02.148 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.9768 ms
+2026-01-15 16:14:05.150 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.3574 ms
+2026-01-15 16:14:08.156 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.2428 ms
+2026-01-15 16:14:11.149 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.3115 ms
+2026-01-15 16:14:14.147 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 12.0200 ms
+2026-01-15 16:14:17.149 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.3476 ms
+2026-01-15 16:14:20.157 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.6182 ms
+2026-01-15 16:14:23.186 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 45.6673 ms
+2026-01-15 16:14:23.335 +07:00 [INF] ========== Excel Import Job Started ==========
+2026-01-15 16:14:23.335 +07:00 [INF] Mode: SMB
+2026-01-15 16:14:23.517 +07:00 [INF] SMB:  Found 1 files matching *.xlsx;*.xls;*.csv
+2026-01-15 16:14:23.547 +07:00 [INF] Found 1 file(s) to process
+2026-01-15 16:14:23.548 +07:00 [INF] Processing: Copy of NGAY 25.12.2025 NIR.xls
+2026-01-15 16:14:23.631 +07:00 [INF] SMB: Downloaded SHS Excel\Copy of NGAY 25.12.2025 NIR.xls to ./temp\Copy of NGAY 25.12.2025 NIR.xls
+2026-01-15 16:14:23.632 +07:00 [INF] Reading file Copy of NGAY 25.12.2025 NIR.xls using XlsReader
+2026-01-15 16:14:23.668 +07:00 [INF] Read 43 rows, 16 columns from Copy of NGAY 25.12.2025 NIR.xls in  F2ms
+2026-01-15 16:14:23.669 +07:00 [INF] Read 43 rows, 19 columns
+2026-01-15 16:14:27.592 +07:00 [INF] HTTP POST /hangfire/stats responded 200 in 11.8328 ms
+2026-01-15 16:14:28.151 +07:00 [ERR] ✗ Error processing Copy of NGAY 25.12.2025 NIR.xls
+Sap.Data.Hana.HanaException (0x80004005): invalid name of function or procedure: no procedure with name SP_PROCESS_EXCEL_IMPORT found: line 1 col 6 (at pos 5)
+   at Sap.Data.Hana.HanaCommand._ExecuteNonQuery()
+   at Sap.Data.Hana.HanaCommand.ExecuteNonQuery()
+   at System.Data.Common.DbCommand.ExecuteNonQueryAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at SHS_Job_Integrate.Services.Database.HanaDbService.ExecuteProcedureAsync(String procedureName, Dictionary`2 parameters, CancellationToken ct) in F:\SHS-Convert-HANA\SHS_Job_Integrate\SHS_Job_Integrate\Services\Database\HanaDbService.cs:line 171
+   at SHS_Job_Integrate.Services.Database.HanaDbService.ProcessWithTempTableAsync(String tempTableName, DataTable data, String procedureName, CancellationToken ct) in F:\SHS-Convert-HANA\SHS_Job_Integrate\SHS_Job_Integrate\Services\Database\HanaDbService.cs:line 50
+   at SHS_Job_Integrate.Services.Database.HanaDbService.ProcessWithTempTableAsync(String tempTableName, DataTable data, String procedureName, CancellationToken ct) in F:\SHS-Convert-HANA\SHS_Job_Integrate\SHS_Job_Integrate\Services\Database\HanaDbService.cs:line 63
+   at SHS_Job_Integrate.Jobs.ExcelImportJob.ExecuteAsync(CancellationToken ct) in F:\SHS-Convert-HANA\SHS_Job_Integrate\SHS_Job_Integrate\Jobs\ExcelImportJob.cs:line 99
+2026-01-15 16:14:28.157 +07:00 [INF] ========== Job Completed in 4.82s ==========
