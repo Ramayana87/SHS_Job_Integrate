@@ -32,7 +32,7 @@ public class XlsReader : IFileReader
         using var stream = File.Open(filePath, FileMode.Open, FileAccess.Read);
         using var reader = ExcelReaderFactory.CreateReader(stream);
 
-        // ✅ Đọc toàn bộ data KHÔNG dùng header row tự động
+        // Đọc toàn bộ data KHÔNG dùng header row tự động
         var conf = new ExcelDataSetConfiguration
         {
             ConfigureDataTable = _ => new ExcelDataTableConfiguration
@@ -54,25 +54,22 @@ public class XlsReader : IFileReader
             rawTable = dataSet.Tables[0];
         }
 
-        // ✅ Build DataTable với header từ dòng được chỉ định
-        var actualHeaderRow = headerRow - 1; // Convert to 0-based
-        var actualDataStartRow = (dataStartRow ?? (headerRow + 1)) - 1; // Convert to 0-based
+        var actualHeaderRow = headerRow - 1; // 0-based
+        var actualDataStartRow = (dataStartRow ?? (headerRow + 1)) - 1; // 0-based
 
         if (actualHeaderRow >= rawTable.Rows.Count)
-        {
             throw new Exception($"Header row {headerRow} is beyond the data range (max:  {rawTable.Rows.Count})");
-        }
 
         var dt = new DataTable();
         dt.TableName = SanitizeName(rawTable.TableName);
 
-        // Lấy header từ dòng được chỉ định
+        // Tạo column luôn là string
         var headerRowData = rawTable.Rows[actualHeaderRow];
         for (var col = 0; col < rawTable.Columns.Count; col++)
         {
             var headerText = headerRowData[col]?.ToString()?.Trim();
             var columnName = GetUniqueColumnName(dt, headerText, col + 1);
-            dt.Columns.Add(columnName, typeof(string)); // Mặc định string, sẽ convert sau
+            dt.Columns.Add(columnName, typeof(string));
         }
 
         AddMetadataColumns(dt);
@@ -80,7 +77,6 @@ public class XlsReader : IFileReader
         var importedAt = DateTime.Now;
         var rowNumber = headerRow;
 
-        // Đọc data từ dòng được chỉ định
         for (var row = actualDataStartRow; row < rawTable.Rows.Count; row++)
         {
             ct.ThrowIfCancellationRequested();
@@ -95,17 +91,30 @@ public class XlsReader : IFileReader
             var newRow = dt.NewRow();
             for (var col = 0; col < rawTable.Columns.Count; col++)
             {
-                newRow[col] = sourceRow[col] ?? DBNull.Value;
+                var cellObj = sourceRow[col];
+                if (cellObj == null || cellObj == DBNull.Value)
+                {
+                    newRow[col] = DBNull.Value;
+                }
+                else if (cellObj is DateTime dtCell)
+                {
+                    // Format thành chuỗi ISO để lưu nguyên (bạn xử lý convert trong store)
+                    newRow[col] = dtCell.ToString("yyyy-MM-ddTHH:mm:ss");
+                }
+                else
+                {
+                    var txt = cellObj.ToString()?.Trim();
+                    newRow[col] = string.IsNullOrEmpty(txt) ? DBNull.Value : (object)txt;
+                }
             }
+
             newRow["_RowNumber"] = rowNumber;
             newRow["_SourceFile"] = sourceFileName;
             newRow["_ImportedAt"] = importedAt;
             dt.Rows.Add(newRow);
         }
 
-        // Convert column types dựa trên data
-        ConvertColumnTypes(dt);
-
+        // Không convert column types ở đây — tất cả giữ string, store sẽ lo convert
         return Task.FromResult(dt);
     }
 

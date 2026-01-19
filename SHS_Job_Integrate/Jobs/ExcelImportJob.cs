@@ -136,7 +136,7 @@ public class ExcelImportJob
                     }
 
                     // 6. Move file đến processed folder tạm đóng để debug
-                    //await _archiveService.MoveToProcessedAsync(remoteFile, ct);
+                    await _archiveService.MoveToProcessedAsync(remoteFile, ct);
 
                     // 7. Cleanup local file
                     _archiveService.CleanupLocalFile(localFile);
