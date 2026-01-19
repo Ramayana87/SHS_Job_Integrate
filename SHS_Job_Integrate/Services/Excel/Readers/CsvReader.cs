@@ -34,16 +34,12 @@ public class CsvReader : IFileReader
         if (allLines.Length == 0)
             return Task.FromResult(dt);
 
-        // ✅ Sử dụng headerRow (1-based)
-        var actualHeaderRow = headerRow - 1; // Convert to 0-based
+        var actualHeaderRow = headerRow - 1; // 0-based
         var actualDataStartRow = (dataStartRow ?? (headerRow + 1)) - 1;
 
         if (actualHeaderRow >= allLines.Length)
-        {
             throw new Exception($"Header row {headerRow} is beyond the file (max: {allLines.Length} lines)");
-        }
 
-        // Parse header
         var headers = allLines[actualHeaderRow].Split(delimiter);
         foreach (var header in headers)
         {
@@ -55,7 +51,6 @@ public class CsvReader : IFileReader
         var sourceFileName = Path.GetFileName(filePath);
         var importedAt = DateTime.Now;
 
-        // Read data
         for (var i = actualDataStartRow; i < allLines.Length; i++)
         {
             ct.ThrowIfCancellationRequested();
@@ -83,19 +78,15 @@ public class CsvReader : IFileReader
             }
         }
 
-        ConvertColumnTypes(dt);
+        // Không convert column types ở đây — mọi thứ giữ string
         return Task.FromResult(dt);
     }
 
     public Task<List<string>> GetSheetNamesAsync(string filePath, CancellationToken ct = default)
     {
-        // CSV không có sheets
         return Task.FromResult(new List<string> { Path.GetFileNameWithoutExtension(filePath) });
     }
 
-    /// <summary>
-    /// Auto-detect delimiter (comma, semicolon, tab, pipe)
-    /// </summary>
     private string DetectDelimiter(string filePath)
     {
         var delimiters = new[] { ",", ";", "\t", "|" };

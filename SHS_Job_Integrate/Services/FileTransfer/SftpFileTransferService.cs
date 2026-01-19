@@ -90,21 +90,41 @@ public class SftpFileTransferService : IFileTransferService
         return Task.FromResult(files);
     }
 
-    private void ListFilesRecursive(SftpClient client, string path, string pattern, List<RemoteFileInfo> files)
+    private void ListFilesRecursive(SftpClient client, string path, string pattern, List<RemoteFileInfo> files, HashSet<string>? visited = null)
     {
+        visited ??= new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+
+        // Normalize path (remove trailing spaces, ensure consistent separators)
+        var normalizedPath = NormalizePath(path).Trim();
+
+        // Avoid revisiting same directory (prevents loops from symlinks or .. recursion)
+        if (!visited.Add(normalizedPath))
+        {
+            _logger.LogDebug("SFTP: Skipping already visited path {Path}", normalizedPath);
+            return;
+        }
+
         try
         {
-            var items = client.ListDirectory(path);
+            var items = client.ListDirectory(normalizedPath);
 
             foreach (var item in items)
             {
-                if (item.Name == "." || item.Name == ".. ") continue;
+                var name = item.Name?.Trim();
+                if (string.IsNullOrEmpty(name)) continue;
 
-                var fullPath = Path.Combine(path, item.Name).Replace('\\', '/');
+                // skip current and parent entries explicitly
+                if (name == "." || name == "..") continue;
+
+                // build full path using unix-style separator (SFTP)
+                var fullPath = normalizedPath.EndsWith("/")
+                    ? normalizedPath + name
+                    : normalizedPath + "/" + name;
 
                 if (item.IsDirectory)
                 {
-                    ListFilesRecursive(client, fullPath, pattern, files);
+                    // Recurse into directory
+                    ListFilesRecursive(client, fullPath, pattern, files, visited);
                 }
                 else if (MatchPattern(item.Name, pattern))
                 {

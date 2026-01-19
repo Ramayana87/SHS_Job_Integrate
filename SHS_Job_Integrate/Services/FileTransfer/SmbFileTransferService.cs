@@ -130,14 +130,25 @@ public class SmbFileTransferService : IFileTransferService
         return Task.FromResult(files);
     }
 
-    private void ListFilesRecursive(ISMBFileStore fileStore, string path, string pattern, List<RemoteFileInfo> files)
+    private void ListFilesRecursive(ISMBFileStore fileStore, string path, string pattern, List<RemoteFileInfo> files, HashSet<string>? visited = null)
     {
+        visited ??= new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+
+        // Normalize path (replace backslashes, trim)
+        var normalizedPath = (path ?? string.Empty).Replace('\\', '/').Trim();
+
+        if (!visited.Add(normalizedPath))
+        {
+            _logger.LogDebug("SMB: Skipping already visited path {Path}", normalizedPath);
+            return;
+        }
+
         try
         {
             var status = fileStore.CreateFile(
                 out var handle,
                 out _,
-                path,
+                normalizedPath,
                 AccessMask.GENERIC_READ,
                 FileAttributes.Directory,
                 ShareAccess.Read | ShareAccess.Write,
@@ -152,20 +163,24 @@ public class SmbFileTransferService : IFileTransferService
 
             foreach (var entry in entries.Cast<FileDirectoryInformation>())
             {
-                if (entry.FileName == "." || entry.FileName == ".. ") continue;
+                var entryName = entry.FileName?.Trim();
+                if (string.IsNullOrEmpty(entryName)) continue;
 
-                var fullPath = Path.Combine(path, entry.FileName);
+                if (entryName == "." || entryName == "..") continue;
+
+                var fullPath = Path.Combine(normalizedPath, entryName).Replace('\\', '/');
 
                 if (entry.FileAttributes.HasFlag(FileAttributes.Directory))
                 {
-                    ListFilesRecursive(fileStore, fullPath, pattern, files);
+                    // Recurse into directory
+                    ListFilesRecursive(fileStore, fullPath, pattern, files, visited);
                 }
                 else if (MatchPattern(entry.FileName, pattern))
                 {
                     files.Add(new RemoteFileInfo
                     {
                         FileName = entry.FileName,
-                        FullPath = fullPath.Replace('\\', '/'),
+                        FullPath = fullPath,
                         Size = entry.EndOfFile,
                         LastModified = entry.LastWriteTime,
                         IsDirectory = false

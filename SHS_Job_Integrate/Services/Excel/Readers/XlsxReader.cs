@@ -36,45 +36,36 @@ public class XlsxReader : IFileReader
             : package.Workbook.Worksheets[sheetName];
 
         if (worksheet == null)
-        {
             throw new Exception($"Sheet '{sheetName}' not found in {filePath}");
-        }
 
         dt.TableName = SanitizeName(worksheet.Name);
 
         var dimension = worksheet.Dimension;
         if (dimension == null)
-        {
             return Task.FromResult(dt);
-        }
 
-        // ✅ Sử dụng headerRow và dataStartRow được truyền vào
         var actualHeaderRow = headerRow;
         var actualDataStartRow = dataStartRow ?? (headerRow + 1);
         var endRow = dimension.End.Row;
         var startCol = dimension.Start.Column;
         var endCol = dimension.End.Column;
 
-        // Validate
         if (actualHeaderRow > endRow)
-        {
             throw new Exception($"Header row {actualHeaderRow} is beyond the data range (max: {endRow})");
-        }
 
-        // Create columns from header row
+        // TẠO COLUMN LUÔN LÀ STRING
         for (var col = startCol; col <= endCol; col++)
         {
             var headerText = worksheet.Cells[actualHeaderRow, col].Text?.Trim();
             var columnName = GetUniqueColumnName(dt, headerText, col);
-            var columnType = DetectColumnType(worksheet, actualDataStartRow, endRow, col);
-            dt.Columns.Add(columnName, columnType);
+            dt.Columns.Add(columnName, typeof(string));
         }
 
         AddMetadataColumns(dt);
         var sourceFileName = Path.GetFileName(filePath);
         var importedAt = DateTime.Now;
 
-        // Read data rows
+        // ĐỌC MỌI CELL NHƯ CHUỖI (dùng .Text để lấy hiển thị)
         for (var row = actualDataStartRow; row <= endRow; row++)
         {
             ct.ThrowIfCancellationRequested();
@@ -86,13 +77,11 @@ public class XlsxReader : IFileReader
             {
                 var cell = worksheet.Cells[row, col];
                 var colIndex = col - startCol;
-                var value = GetCellValue(cell, dt.Columns[colIndex].DataType);
-                dataRow[colIndex] = value ?? DBNull.Value;
+                var text = cell.Text?.Trim();
+                dataRow[colIndex] = string.IsNullOrEmpty(text) ? DBNull.Value : (object)text;
 
-                if (value != null && !string.IsNullOrWhiteSpace(value.ToString()))
-                {
+                if (!string.IsNullOrEmpty(text))
                     hasData = true;
-                }
             }
 
             if (hasData)
@@ -104,6 +93,7 @@ public class XlsxReader : IFileReader
             }
         }
 
+        // Không convert column types ở đây
         return Task.FromResult(dt);
     }
 
