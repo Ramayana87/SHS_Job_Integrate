@@ -3,3 +3,8 @@
 ################################################################################
 
 /.vs
+**/bin/
+**/obj/
+/SHS_Job_Integrate/.config
+/SHS_Job_Integrate/logs
+/SHS_Job_Integrate/Properties/PublishProfiles
