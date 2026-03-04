@@ -17,6 +17,8 @@ BEGIN
     - Result: DECIMAL (Giá trị)
     */
     DECLARE maxEntry INT;
+    DECLARE error  int;								-- Result (0 for no error)
+	DECLARE error_message nvarchar (200);
 
 	DECLARE tbl TABLE 
 	(
@@ -41,11 +43,11 @@ BEGIN
         DEFAULT 1
     FROM "@OARS10";
     
-    -- insert bảng cha ới các giá trị mặc định
+    -- insert bảng cha với các giá trị mặc định
     INSERT INTO "@OARS10" ("DocEntry", "DocNum", "U_Formula", "U_Status", "Remark"
                         , "Period", "Instance", "Series", "Handwrtten", "Canceled", "Object", "LogInst", "UserSign", "Transfered", "Status"
                         , "CreateDate", "CreateTime", "UpdateDate", "UpdateTime", "DataSource", "RequestStatus", "Creator")
-    SELECT :maxEntry + 1, :maxEntry + 1, 'F04', 'C', 'Imported from NIR system'
+    SELECT :maxEntry + 1, :maxEntry + 1, 'F04', 'C', 'Imported from NIR machine'
             , 27, 0, -1, 'N', 'N', 'OARS10', NULL, 1, 'N', 'O'
             , CURRENT_DATE, TO_INTEGER(TO_VARCHAR(CURRENT_TIME, 'HH24mi')), CURRENT_DATE, TO_INTEGER(TO_VARCHAR(CURRENT_TIME, 'HH24mi')), 'S', 'W', 'manager'
 
@@ -62,14 +64,7 @@ BEGIN
     UPDATE ONNM SET "AutoKey" = (SELECT MAX("DocEntry") FROM "@OARS10") + 1
     WHERE "ObjectCode" = 'OARS10';
     
+    -- đẩy kết quả từ UDO Receive Results F04 máy NIR OARS10 về QC Result
+	CALL Apz_SBO_GEN_QCResultFromF04(:maxEntry + 1, :error, :error_message);
 	--SELECT * FROM :tbl;
 END;
-
-
-
-
-
-
-
-
-
