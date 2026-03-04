@@ -9,6 +9,7 @@ using SHS_Job_Integrate.Services.Archive;
 using SHS_Job_Integrate.Services.Database;
 using SHS_Job_Integrate.Services.Excel;
 using SHS_Job_Integrate.Services.FileTransfer;
+using SHS_Job_Integrate.Services.GcLc;
 using SHS_Job_Integrate.Services.Nir;
 
 // Configure Serilog với filter
@@ -72,6 +73,14 @@ try
     builder.Services.AddScoped<ExcelImportJob>();
     builder.Services.AddScoped<ArchiveCleanupJob>();
 
+    // Register GC-LC Services
+    builder.Services.Configure<GcLcSettings>(
+        builder.Configuration.GetSection("GcLcSettings"));
+    builder.Services.Configure<GcLcJobSettings>(
+        builder.Configuration.GetSection("GcLcJobSettings"));
+    builder.Services.AddScoped<IGcLcFileParser, GcLcFileParser>();
+    builder.Services.AddScoped<GcLcImportJob>();
+
     // Configure Hangfire
     builder.Services.AddHangfire(config => config
         .SetDataCompatibilityLevel(CompatibilityLevel.Version_180)
@@ -95,7 +104,7 @@ try
     builder.Services.AddHangfireServer(options =>
     {
         options.WorkerCount = Environment.ProcessorCount * 2;
-        options.Queues = new[] { "excel-import", "default" };
+        options.Queues = new[] { "excel-import", "gclc-import", "default" };
     });
 
     var app = builder.Build();
@@ -131,6 +140,22 @@ try
             "archive-cleanup-job",
             job => job.ExecuteAsync(CancellationToken.None),
             "0 0 2 * * *", // Hàng ngày lúc 2 giờ sáng
+            new RecurringJobOptions
+            {
+                TimeZone = TimeZoneInfo.Local
+            });
+    }
+
+    // GC-LC Import Job
+    var gcLcJobSettings = builder.Configuration.GetSection("GcLcJobSettings");
+    if (gcLcJobSettings.GetValue<bool>("EnableJob"))
+    {
+        var gcLcCron = gcLcJobSettings.GetValue<string>("CronExpression") ?? "0 */15 * * * *";
+        RecurringJob.AddOrUpdate<GcLcImportJob>(
+            "gclc-import-job",
+            "gclc-import",
+            job => job.ExecuteAsync(CancellationToken.None),
+            gcLcCron,
             new RecurringJobOptions
             {
                 TimeZone = TimeZoneInfo.Local
