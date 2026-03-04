@@ -2,6 +2,7 @@
 using Microsoft.Extensions.Options;
 using SHS_Job_Integrate.Models;
 using SHS_Job_Integrate.Services.Archive;
+using SHS_Job_Integrate.Services.FileTransfer;
 
 namespace SHS_Job_Integrate.Jobs;
 
@@ -10,15 +11,18 @@ namespace SHS_Job_Integrate.Jobs;
 public class ArchiveCleanupJob
 {
     private readonly IArchiveService _archiveService;
+    private readonly IFileTransferFactory _fileTransferFactory;
     private readonly GcLcSettings _gcLcSettings;
     private readonly ILogger<ArchiveCleanupJob> _logger;
 
     public ArchiveCleanupJob(
         IArchiveService archiveService,
+        IFileTransferFactory fileTransferFactory,
         IOptions<GcLcSettings> gcLcSettings,
         ILogger<ArchiveCleanupJob> logger)
     {
         _archiveService = archiveService;
+        _fileTransferFactory = fileTransferFactory;
         _gcLcSettings = gcLcSettings.Value;
         _logger = logger;
     }
@@ -33,7 +37,7 @@ public class ArchiveCleanupJob
             var deletedCount = await _archiveService.CleanupOldFilesAsync(ct);
             _logger.LogInformation("NIR/Excel archive cleanup completed: {Count} files deleted", deletedCount);
 
-            // Cleanup GC-LC local archive
+            // Cleanup GC-LC remote archive
             var gcLcDeleted = await CleanupGcLcArchiveAsync(ct);
             _logger.LogInformation("GC-LC archive cleanup completed: {Count} files deleted", gcLcDeleted);
         }
@@ -55,54 +59,39 @@ public class ArchiveCleanupJob
         }
 
         var cutoffDate = DateTime.UtcNow.AddDays(-_gcLcSettings.RetentionDays);
+        var fileTransfer = _fileTransferFactory.GetService();
         var totalDeleted = 0;
 
-        totalDeleted += await CleanupLocalFolderAsync(_gcLcSettings.ProcessedPath, cutoffDate, ct);
-        totalDeleted += await CleanupLocalFolderAsync(_gcLcSettings.ErrorPath, cutoffDate, ct);
+        totalDeleted += await CleanupRemoteFolderAsync(fileTransfer, _gcLcSettings.ProcessedPath, cutoffDate, ct);
+        totalDeleted += await CleanupRemoteFolderAsync(fileTransfer, _gcLcSettings.ErrorPath, cutoffDate, ct);
 
         return totalDeleted;
     }
 
-    private Task<int> CleanupLocalFolderAsync(string folderPath, DateTime cutoffDate, CancellationToken ct)
+    private async Task<int> CleanupRemoteFolderAsync(IFileTransferService fileTransfer, string folderPath, DateTime cutoffDate, CancellationToken ct)
     {
-        return Task.Run(() =>
+        var deleted = 0;
+        try
         {
-            var deleted = 0;
-
-            if (!Directory.Exists(folderPath))
-                return 0;
-
-            try
+            var files = await fileTransfer.ListFilesWithInfoAsync(folderPath, "*.*", ct);
+            foreach (var file in files.Where(f => f.LastModified < cutoffDate))
             {
-                foreach (var file in Directory.GetFiles(folderPath, "*.*", SearchOption.AllDirectories))
+                try
                 {
-                    ct.ThrowIfCancellationRequested();
-                    try
-                    {
-                        var lastWrite = File.GetLastWriteTimeUtc(file);
-                        if (lastWrite < cutoffDate)
-                        {
-                            File.Delete(file);
-                            deleted++;
-                            _logger.LogDebug("Deleted old GC-LC archive file: {File}", file);
-                        }
-                    }
-                    catch (Exception ex)
-                    {
-                        _logger.LogWarning(ex, "Failed to delete old GC-LC file: {File}", file);
-                    }
+                    await fileTransfer.DeleteFileAsync(file.FullPath, ct);
+                    deleted++;
+                    _logger.LogDebug("Deleted old GC-LC archive file: {File}", file.FullPath);
+                }
+                catch (Exception ex)
+                {
+                    _logger.LogWarning(ex, "Failed to delete old GC-LC file: {File}", file.FullPath);
                 }
             }
-            catch (OperationCanceledException)
-            {
-                throw;
-            }
-            catch (Exception ex)
-            {
-                _logger.LogWarning(ex, "Failed to cleanup GC-LC folder: {Folder}", folderPath);
-            }
-
-            return deleted;
-        }, ct);
+        }
+        catch (Exception ex)
+        {
+            _logger.LogWarning(ex, "Failed to cleanup GC-LC folder: {Folder}", folderPath);
+        }
+        return deleted;
     }
 }

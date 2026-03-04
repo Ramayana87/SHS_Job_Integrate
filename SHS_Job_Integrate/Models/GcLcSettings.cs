@@ -2,7 +2,7 @@ namespace SHS_Job_Integrate.Models;
 
 public class GcLcSettings
 {
-    public string FolderPath { get; set; } = "";
+    public string RemotePath { get; set; } = "data/GcLc";
     public string FilePattern { get; set; } = "*.txt";
     public string ProcessedPath { get; set; } = "archive/gclc/processed";
     public string ErrorPath { get; set; } = "archive/gclc/error";
