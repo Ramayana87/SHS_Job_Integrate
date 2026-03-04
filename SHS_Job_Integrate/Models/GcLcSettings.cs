@@ -7,6 +7,7 @@ public class GcLcSettings
     public string ProcessedPath { get; set; } = "archive/gclc/processed";
     public string ErrorPath { get; set; } = "archive/gclc/error";
     public bool UseDateFolder { get; set; } = true;
+    public int RetentionDays { get; set; } = 30;
 }
 
 public class GcLcJobSettings
